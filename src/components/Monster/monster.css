@@ -1,0 +1,244 @@
+.bg-primary {
+    background-color: #00bcd1 !important; }
+
+/*==============================
+ *    Navigation
+ *    ================================ */
+/* topbar */
+#top-bar {
+    display: block;
+    position: relative;
+    z-index: 999;
+    padding: 7px 0; }
+  
+  .top-bar-info {
+    display: inline-block;
+    vertical-align: middle; }
+    .top-bar-info li i {
+      font-size: 16px;
+      color: #00bcd1;
+      margin-right: 8px;
+      margin-top: 0;
+      display: inline-block;
+      vertical-align: text-bottom; }
+    .top-bar-info ul {
+      margin-bottom: 0; }
+    .top-bar-info li {
+      font-weight: 500;
+      list-style-type: none;
+      font-size: 13px;
+      border-color: rgba(225, 225, 225, 0.6) !important;
+      padding: 0 15px 0 0;
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 0; }
+      .top-bar-info li:last-child {
+        padding-right: 0;
+        margin-right: 0; }
+  
+  /* topbar info */
+  .top-social-icon {
+    padding: 0;
+    float: right;
+    margin: 0; }
+    .top-social-icon li {
+      font-size: 14px;
+      list-style-type: none;
+      float: left;
+      text-align: center;
+      margin: 0;
+      padding: 0 7px; }
+      .top-social-icon li:last-child {
+        padding-right: 0; }
+        .top-social-icon li:last-child a {
+          padding-right: 0; }
+      .top-social-icon li a {
+        color: #fff;
+        line-height: 28px;
+        -moz-transition-duration: .3s;
+        -ms-transition-duration: .3s;
+        -webkit-transition-duration: .3s;
+        -o-transition-duration: .3s;
+        transition-duration: .3s;
+        padding: 0 3px; }
+  
+  @media screen and (max-width: 575px) {
+    .top-bar-info li {
+      border-right: none !important;
+      margin-right: 0; } }
+  .header-icon {
+    border: 1px solid #00bcd1;
+    border-radius: 50%;
+    min-height: 50px;
+    min-width: 50px;
+    line-height: 2;
+    font-size: 24px;
+    text-align: center;
+    display: inline-block; }
+    .header-icon i {
+      vertical-align: sub; }
+  
+  .header-icon2 {
+    border: none;
+    background: rgba(0, 188, 209, 0.1);
+    color: #00bcd1;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 50px; }
+  
+  .header-icon3 {
+    border: 1px solid #fff;
+    background: #fff;
+    color: #00bcd1;
+    border-radius: 50%;
+    min-height: 50px;
+    min-width: 50px;
+    line-height: 2;
+    font-size: 24px;
+    text-align: center;
+    display: inline-block; }
+  
+  .navbar-nav li.current > a {
+    color: #00bcd1; }
+  
+  /* menu area light */
+  .navbar-nav li.current > a, .navbar-nav li.active > a {
+    color: #00bcd1; }
+  
+  .navbar > ul > li.current > a:after {
+    border-color: transparent #00bcd1 #00bcd1 transparent; }
+  
+  .menu_area-light .navbar-nav li.current > a, .menu_area-light .navbar-nav li.active > a {
+    color: #00bcd1; }
+  .menu_area-light .navbar > ul > li.current > a:after {
+    border-color: transparent #00bcd1 #00bcd1 transparent; }
+  .menu_area-light.scrollHeader .navbar-nav li.current > a {
+    color: #00bcd1; }
+    .menu_area-light.scrollHeader .navbar-nav li.current > a:hover {
+      color: #00bcd1; }
+  .menu_area-light.scrollHeader .navbar-nav li.active > a {
+    color: #00bcd1; }
+  .menu_area-light.scrollHeader .navbar > ul > li.current > a:after {
+    border-color: transparent #00bcd1 #00bcd1 transparent; }
+  
+  /* header style3 */
+  .header-style3 .navbar-nav li.current > a {
+    color: #00bcd1; }
+  .header-style3 .navbar > ul > li.current > a:after {
+    border-color: transparent #00bcd1 #00bcd1 transparent; }
+  .header-style3.scrollHeader .navbar-nav li.current > a {
+    color: #00bcd1; }
+    .header-style3.scrollHeader .navbar-nav li.current > a:hover {
+      color: #00bcd1; }
+  .header-style3.scrollHeader .navbar > ul > li.current > a:after {
+    border-color: transparent #00bcd1 #00bcd1 transparent; }
+  
+  @media screen and (min-width: 992px) {
+    .header-style3 .navbar ul ul li.active > a {
+      color: #00bcd1; }
+  
+    .menu_area-light .navbar-nav li.current > a, .menu_area-light .navbar-nav li.active > a {
+      color: #00bcd1; }
+    .menu_area-light .navbar ul ul li.active > a {
+      color: #00bcd1; }
+    .menu_area-light .navbar > ul > li.current > a:after {
+      border-color: transparent #00bcd1 #00bcd1 transparent; }
+    .menu_area-light .navbar-nav > li.has-sub > a:hover {
+      color: #00bcd1; }
+    .menu_area-light .navbar > ul > li.has-sub > a:after {
+      border-color: transparent #fff #fff transparent; }
+    .menu_area-light .navbar > ul > li.has-sub > a:hover:after {
+      border-color: transparent #00bcd1 #00bcd1 transparent; }
+    .menu_area-light .navbar-nav li.has-sub a:hover {
+      color: #00bcd1; }
+    .menu_area-light .navbar > ul > li.current > a:after {
+      border-color: transparent #00bcd1 #00bcd1 transparent; }
+    .menu_area-light.scrollHeader .navbar-nav > li > a {
+      color: #fff; }
+    .menu_area-light.scrollHeader .navbar-nav > li.has-sub > a:hover {
+      color: #00bcd1; }
+    .menu_area-light.scrollHeader .navbar > ul > li.has-sub > a:after {
+      border-color: transparent #fff #fff transparent; }
+    .menu_area-light.scrollHeader .navbar > ul > li.has-sub > a:hover:after {
+      border-color: transparent #00bcd1 #00bcd1 transparent; }
+    .menu_area-light.scrollHeader .navbar-nav li.current > a {
+      color: #00bcd1; }
+      .menu_area-light.scrollHeader .navbar-nav li.current > a:hover {
+        color: #00bcd1; }
+    .menu_area-light.scrollHeader .navbar > ul > li.current > a:after {
+      border-color: transparent #00bcd1 #00bcd1 transparent; }
+    .menu_area-light .attr-nav > ul > li > a {
+      color: #fff; } }
+  @media screen and (max-width: 991px) {
+    .navbar ul ul li.active > a {
+      color: #00bcd1; }
+  
+    .navbar-nav li.active > a {
+      opacity: 1;
+      color: #00bcd1; } }
+  /* custom header */
+  @media screen and (max-width: 1399px) {
+    .header-custom .navbar-default .butn.appointment {
+      background: transparent;
+      color: #f15b5a;
+      padding: 0 !important; }
+      .header-custom .navbar-default .butn.appointment i {
+        vertical-align: top !important;
+        margin-right: 0 !important; } }
+  @media screen and (max-width: 1199px) {
+    .header-custom .navbar-nav > li {
+      margin-left: 2px; }
+    .header-custom .attr-nav > ul > li > a {
+      padding: 19px 8px; }
+    .header-custom .navbar-brand img {
+      max-height: 36px; } }
+  @media screen and (max-width: 991px) {
+    .header-custom .navbar-toggler {
+      top: 16px; }
+    .header-custom .attr-nav {
+      margin-top: 0; }
+    .header-custom .navbar-default .butn.appointment {
+      padding: 7px 5px 7px 5px !important; }
+    .header-custom .attr-nav > ul > li > a {
+      padding: 0; }
+    .header-custom .navbar-nav {
+      top: 70px; } }
+  @media screen and (max-width: 479px) {
+    .header-custom .navbar-nav {
+      top: 68px; } }
+  /* header custom fill */
+  .header-custom-fill #top-bar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25); }
+  
+  @media screen and (max-width: 991px) {
+    .header-custom-fill .navbar-toggler {
+      background: #fff; }
+      .header-custom-fill .navbar-toggler:after {
+        border-top: 2px solid #1e2022;
+        border-bottom: 2px solid #1e2022; }
+      .header-custom-fill .navbar-toggler:before {
+        background: #1e2022; }
+      .header-custom-fill .navbar-toggler.menu-opened:after {
+        background: #1e2022;
+        border: transparent; }
+      .header-custom-fill .navbar-toggler.menu-opened:before {
+        background: #1e2022; }
+    .header-custom-fill .attr-nav > ul > li > a {
+      color: #fff; }
+    .header-custom-fill .badge.bg-primary {
+      color: #00bcd1;
+      background: #fff !important; }
+    .header-custom-fill .top-search {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 120px; } }
+  @media screen and (max-width: 767px) {
+    .header-custom-fill .top-search {
+      top: 78px; } }
+  @media screen and (max-width: 479px) {
+    .header-custom-fill .top-search {
+      top: 68px; } }
