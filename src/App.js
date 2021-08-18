@@ -19,6 +19,7 @@ import backCar from "./img/gallery/BackBeforeAndAfter.jpg";
 import frontCar from "./img/gallery/FrontBeforeAndAfter.jpg";
 import interiorCar from "./img/gallery/InteriorBeforeAndAfter.jpg";
 import wash from "./img/CTA/carWash.jpg";
+import TopBar from "./components/topBar/topBar.jsx";
 
 class App extends React.Component {
   render() {
@@ -26,53 +27,7 @@ class App extends React.Component {
       <React.Fragment>
         <div className="main-wrapper">
           <header className="header-style3 header-custom">
-            {/* bar above nav start */}
-            <div id="top-bar" className="bg-primary d-none d-md block">
-              <div className="container">
-                <div className="row">
-                  {/* Phone and email start */}
-                  <div className="col-md-9 col-xs-12">
-                    <div className="top-bar-info">
-                      <ul class="list-unstyled">
-                        <li className="border-right text-white">
-                          <i className="fas fa-phone text-white"></i>
-                          323-495-0763
-                        </li>
-                        <li className="border-right text-white">
-                          <i className="fas fa-phone text-white"></i>
-                          needabusinessemail@gmail.com
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  {/* Phone and email end */}
-                  {/* Social media links start */}
-                  <div className="col-md-3 col-xs-12">
-                    <div>
-                      <ul className="top-social-icon mb-0">
-                        <li>
-                          <a href="/">
-                            <i className="fab fa-facebook"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="/">
-                            <i className="fab fa-twitter"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="/">
-                            <i className="fab fa-instagram"></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  {/* Social media links end */}
-                </div>
-              </div>
-            </div>
-            {/* bar above nav start */}
+           <TopBar />
 
             <div className="navbar-default">
               <div className="container">
@@ -344,7 +299,7 @@ class App extends React.Component {
             className="bg-img cover-background theme-overlay"
             data-overlay-dark="8"
             style={{ backgroundImage: `url(${testBg})` }}
-            >
+          >
             <div className="container">
               <div className="mb-5 text-center">
                 <h2 className="text-white ">
@@ -442,14 +397,16 @@ class App extends React.Component {
           <section className="portfolio">
             <div className="container">
               <div className="mb-5 text-center">
-                <h2>
-                  Gallery
-                </h2> 
+                <h2>Gallery</h2>
               </div>
               <div className="row portfolio-gallery">
-                <div className="col-sm-6 col-md-4 col-lg-3 mb-1-6" data-src={backCar} data-sub-html="<h4 className='text-white'> Gallery Image #01</h4><p>For Blah Blah</p>">
+                <div
+                  className="col-sm-6 col-md-4 col-lg-3 mb-1-6"
+                  data-src={backCar}
+                  data-sub-html="<h4 className='text-white'> Gallery Image #01</h4><p>For Blah Blah</p>"
+                >
                   <div className="portfolio-style2">
-                    <img className="img-responsive" src={backCar} alt="..."/>
+                    <img className="img-responsive" src={backCar} alt="..." />
                     <div className="item-img-overlay d-flex">
                       <div className="justify-content-center align-self-center mx-auto">
                         <i className="fa fa-search-plus"></i>
@@ -458,9 +415,13 @@ class App extends React.Component {
                   </div>
                 </div>
 
-                <div className="col-sm-6 col-md-4 col-lg-3 mb-1-6" data-src={frontCar} data-sub-html="<h4 className='text-white'> Gallery Image #01</h4><p>For Blah Blah</p>">
+                <div
+                  className="col-sm-6 col-md-4 col-lg-3 mb-1-6"
+                  data-src={frontCar}
+                  data-sub-html="<h4 className='text-white'> Gallery Image #01</h4><p>For Blah Blah</p>"
+                >
                   <div className="portfolio-style2">
-                    <img className="img-responsive" src={frontCar} alt="..."/>
+                    <img className="img-responsive" src={frontCar} alt="..." />
                     <div className="item-img-overlay d-flex">
                       <div className="justify-content-center align-self-center mx-auto">
                         <i className="fa fa-search-plus"></i>
@@ -469,9 +430,17 @@ class App extends React.Component {
                   </div>
                 </div>
 
-                <div className="col-sm-6 col-md-4 col-lg-3 mb-1-6" data-src={interiorCar} data-sub-html="<h4 className='text-white'> Gallery Image #01</h4><p>For Blah Blah</p>">
+                <div
+                  className="col-sm-6 col-md-4 col-lg-3 mb-1-6"
+                  data-src={interiorCar}
+                  data-sub-html="<h4 className='text-white'> Gallery Image #01</h4><p>For Blah Blah</p>"
+                >
                   <div className="portfolio-style2">
-                    <img className="img-responsive" src={interiorCar} alt="..."/>
+                    <img
+                      className="img-responsive"
+                      src={interiorCar}
+                      alt="..."
+                    />
                     <div className="item-img-overlay d-flex">
                       <div className="justify-content-center align-self-center mx-auto">
                         <i className="fa fa-search-plus"></i>
@@ -479,26 +448,195 @@ class App extends React.Component {
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
           </section>
           {/* Gallery  End */}
           {/* Call to Action Banner Start */}
-          <section className="bg-img cover-background theme-overlay" data-overlay-dark="8" style={{backgroundImage: `url(${wash})`}}>
+          <section
+            className="bg-img cover-background theme-overlay"
+            data-overlay-dark="8"
+            style={{ backgroundImage: `url(${wash})` }}
+          >
             <div className="container">
-              <div className="row justify-content-center">  
-               <div className="col-lg-7 col-md-10 text-center">
-
-               </div>
-
+              <div className="row justify-content-center">
+                <div className="col-lg-7 col-md-10 text-center">
+                  <h2 className="text-white mb-4">
+                    {" "}
+                    Make sure to call us at 323-495-0763 to schedule your
+                    cleaning today!{" "}
+                  </h2>
+                  <a href="/" className="butn white">
+                    {" "}
+                    Contact US{" "}
+                  </a>
+                </div>
               </div>
             </div>
           </section>
-
           {/* Call to Action Banner End */}
+          {/* Contact Form Start */}
+          <section>
+            <div className="container">
+              <div className="row">
+                <div className="col">
+                  <div className="pl-lg-1-9">
+                    <h2>Get a free quote!</h2>
+                    <form
+                      className="quform"
+                      action="/"
+                      method="post"
+                      encType="multipart/form-data"
+                      onClick=""
+                    >
+                      <div className="quform-elements">
+                        <div className="row">
+                          {/* Input start */}
+                          <div className="col-md-6">
+                            <div className="quform-element form-group">
+                              <label for="name">
+                                {" "}
+                                Your Full Name
+                                <span className="quform-required">* </span>
+                              </label>
+                              <div className="quform-input">
+                                <input
+                                  className="form-control"
+                                  id="name"
+                                  type="text"
+                                  name="name"
+                                  placeholder="i.e. John Smith"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          {/* Input End */}
 
+                          {/* Input start */}
+                          <div className="col-md-6">
+                            <div className="quform-element form-group">
+                              <label for="email">
+                                {" "}
+                                Your Email
+                                <span className="quform-required">* </span>
+                              </label>
+                              <div className="quform-input">
+                                <input
+                                  className="form-control"
+                                  id="email"
+                                  type="email"
+                                  name="email"
+                                  placeholder="i.e. jsmith@gmail.com"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          {/* Input End */}
+                          {/* Input start */}
+                          <div className="col-md-6">
+                            <div className="quform-element form-group">
+                              <label for="sunject">
+                                {" "}
+                                Subject Line
+                                <span className="quform-required">* </span>
+                              </label>
+                              <div className="quform-input">
+                                <input
+                                  className="form-control"
+                                  id="subject"
+                                  type="text"
+                                  name="subject"
+                                  placeholder="Clean my ride please!"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          {/* Input End */}
+                          {/* Input start */}
+                          <div className="col-md-6">
+                            <div className="quform-element form-group">
+                              <label for="phone">
+                                {" "}
+                                Your Phone Number
+                                <span className="quform-required">* </span>
+                              </label>
+                              <div className="quform-input">
+                                <input
+                                  className="form-control"
+                                  id="phone"
+                                  type="text"
+                                  name="phone"
+                                  placeholder="323-495-0763"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          {/* Input End */}
+                          {/* Input start */}
+                          <div className="col-md-12">
+                            <div className="quform-element form-group">
+                              <label for="message">
+                                {" "}
+                                Message
+                                <span className="quform-required">* </span>
+                              </label>
+                              <div className="quform-input">
+                                <textarea
+                                  className="form-control"
+                                  id="message"
+                                  name="message"
+                                  rows="3"
+                                  placeholder="What kind of car do you have? What kind of cleaning do you need today?"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          {/* Input End */}
+                          {/* Submit start */}
+                          <div className="col-md-12">
+                            <div className="quform-submit-inner">
+                              <button className="butn theme butn-md" type="submit">
+                                <span>
+                                  Send Message
+                                </span>
+                              </button>
+                            </div>
+                            <div className="quform-loading-wrap text-left">
+                              <span className="quform-loading">
+                              </span>
+                            </div>
+                          </div>
+                          {/* Submit end */}
+                          
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          {/* Contact Form End */}
+            {/* Footer Start */}
+            <footer className="bg-dark-blue">
+              <div className="py-4 border-top border-color-light-white">
+                <div className="container">
+                  <div className="text-center">
+                    <p className="mb-0 text-white opacity9">
+                      &copy; 2021 J's Mobile Detailing
+                      <br />
+                      Website created by: 
+                      <a href="https://www.carlosjaraportfolio.com/" className="text-primary text-white-hover">Carlos Jara</a>
+                    </p>
 
+                  </div>
+
+                </div>
+
+              </div>
+
+            </footer>
+            {/* Footer End */}
         </div>
       </React.Fragment>
     );
