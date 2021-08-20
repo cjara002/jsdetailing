@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import "./App.css";
 // import Monster from "./components/Monster/monster.jsx";
-import Jlogo from "./img/JLogo.JPG";
+// import Jlogo from "./img/JLogo.JPG";
 // import TempLogo from "./img/tempLogo.png";
 // import Logo from "./img/logo.png";
 // import Audi from "./img/banner/audiBanner.jpg";
@@ -19,78 +19,15 @@ import backCar from "./img/gallery/BackBeforeAndAfter.jpg";
 import frontCar from "./img/gallery/FrontBeforeAndAfter.jpg";
 import interiorCar from "./img/gallery/InteriorBeforeAndAfter.jpg";
 import wash from "./img/CTA/carWash.jpg";
-import TopBar from "./components/topBar/topBar.jsx";
+// import TopBar from "./components/topBar/topBar.jsx";
+import NavBar from "./components/navBar/navBar.jsx";
 
 class App extends React.Component {
   render() {
     return (
       <React.Fragment>
         <div className="main-wrapper">
-          <header className="header-style3 header-custom">
-           <TopBar />
-
-            <div className="navbar-default">
-              <div className="container">
-                <div className="row align-items-center">
-                  <div className="col-12">
-                    <div menu_area alt-font>
-                      {/* nav bar start  */}
-                      <nav className="navbar navbar-expand-lg navbar-light p-0 d-flex justify-content-between">
-                        {/* logo start */}
-                        <div className="navbar-header navbar-header-custom">
-                          <a
-                            href="/"
-                            className="navbar-brand xs-width-145px d-inline-block mr-lg-0"
-                          >
-                            <img src={Jlogo} alt="logo" id="logo" />
-                            {/* <img src={TempLogo} alt="logo"  id="logo"/> */}
-                            {/* <img src={Logo} alt="logo"  id="logo"/> */}
-                          </a>
-                        </div>
-                        {/* logo end */}
-
-                        {/* menu start */}
-                        <ul className="navbar-nav ml-auto" id="nav">
-                          <li>
-                            <a href="/">Services</a>
-                          </li>
-                          <li>
-                            <a href="/">Testimonials</a>
-                          </li>
-                          <li>
-                            <a href="/">Gallery</a>
-                          </li>
-                          <li className="ml-2">
-                            <a href="/" className="butn appointment">
-                              <i className="fas fa-calendar-day mr-1 align-middle display-28"></i>
-                              <span className="alt-font align-middle d-none d-xxl-inline-block">
-                                Book Now
-                              </span>
-                            </a>
-                          </li>
-                        </ul>
-                        {/* menu end */}
-                        {/* attri nav start */}
-                        {/* <div className="attr-nav">
-                          <ul>
-                            <li className="dropdown">
-                              <a href="/">
-                                <i className="fas fa-shopping-cart"></i>
-                                <span className="badge bg-primary">3</span>
-                              </a>
-                            </li>
-                          </ul>
-                        </div> */}
-                        {/* attri nav end */}
-                      </nav>
-                      {/* nav bar end  */}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* can add modal here for the appointment button */}
-          </header>
+          <NavBar />
           {/* Hero Banner Start */}
           <div className="screen-height">
             <div className="slider-fade3 h-100">
@@ -595,19 +532,18 @@ class App extends React.Component {
                           {/* Submit start */}
                           <div className="col-md-12">
                             <div className="quform-submit-inner">
-                              <button className="butn theme butn-md" type="submit">
-                                <span>
-                                  Send Message
-                                </span>
+                              <button
+                                className="butn theme butn-md"
+                                type="submit"
+                              >
+                                <span>Send Message</span>
                               </button>
                             </div>
                             <div className="quform-loading-wrap text-left">
-                              <span className="quform-loading">
-                              </span>
+                              <span className="quform-loading"></span>
                             </div>
                           </div>
                           {/* Submit end */}
-                          
                         </div>
                       </div>
                     </form>
@@ -617,26 +553,27 @@ class App extends React.Component {
             </div>
           </section>
           {/* Contact Form End */}
-            {/* Footer Start */}
-            <footer className="bg-dark-blue">
-              <div className="py-4 border-top border-color-light-white">
-                <div className="container">
-                  <div className="text-center">
-                    <p className="mb-0 text-white opacity9">
-                      &copy; 2021 J's Mobile Detailing
-                      <br />
-                      Website created by: 
-                      <a href="https://www.carlosjaraportfolio.com/" className="text-primary text-white-hover">Carlos Jara</a>
-                    </p>
-
-                  </div>
-
+          {/* Footer Start */}
+          <footer className="bg-dark-blue">
+            <div className="py-4 border-top border-color-light-white">
+              <div className="container">
+                <div className="text-center">
+                  <p className="mb-0 text-white opacity9">
+                    &copy; 2021 J's Mobile Detailing
+                    <br />
+                    Website created by:
+                    <a
+                      href="https://www.carlosjaraportfolio.com/"
+                      className="text-primary text-white-hover"
+                    >
+                      Carlos Jara
+                    </a>
+                  </p>
                 </div>
-
               </div>
-
-            </footer>
-            {/* Footer End */}
+            </div>
+          </footer>
+          {/* Footer End */}
         </div>
       </React.Fragment>
     );
