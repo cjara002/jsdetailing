@@ -1,0 +1,262 @@
+/* ========================================================================
+Slider
+ ========================================================================== */
+ .slider {
+    height: 90vh !important; 
+  }
+  
+  .sliderInnerSection {
+    padding: 0 70px;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    color: White;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  .previousButton:hover,
+  .nextButton:hover {
+    background-color: #9a8c67;
+    border-radius: 30px;
+    opacity: 0.7;
+  }
+  
+  /* .slide.animateIn.previous h1,
+  .slide.current h1,
+  .slide.animateIn.next h1,
+  .slide.animateIn.previous button,
+  .slide.current button,
+  .slide.animateIn.next button,
+  .slide.animateIn.previous p,
+  .slide.current p,
+  .slide.animateIn.next p,
+  .slide.animateIn.previous section *,
+  .slide.current section *,
+  .slide.animateIn.next section * {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition-delay: 0.9s;
+    transition-delay: 0.9s;
+    opacity: 1;
+  } */
+  .slide::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(transparent),
+      to(rgba(0, 0, 0, 0.9))
+    );
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    bottom: 0;
+    left: 0;
+  }
+
+ 
+
+  /* slider fade3 */
+.slider-fade3 .owl-stage-outer {
+    height: 100%;
+  }
+  .slider-fade3 .owl-item {
+    height: 100vh;
+    position: relative;
+  }
+  .slider-fade3 .text-center h1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .slider-fade3 .text-right h1 {
+    margin-right: 0;
+    margin-left: auto;
+  }
+  .slider-fade3 .item {
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+  }
+  .slider-fade3 .item .caption {
+    width: 100%;
+    z-index: 9;
+  }
+  .slider-fade3 .owl-carousel .caption .overflow-hidden {
+    display: inline-block;
+    margin-top: 25rem;
+  }
+  .slider-fade3 .owl-carousel .caption h3 {
+    font-weight: 200;
+    animation-delay: 0.5s;
+    display: inline-block;
+    position: relative;
+  }
+  .slider-fade3 .owl-carousel .caption h3:before {
+    content: "";
+    width: 100px;
+    height: 5px;
+    background: #9a8c67;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  .slider-fade3 .owl-carousel .caption h1 {
+    animation-delay: 0.8s;
+    font-size: 4rem;
+    text-transform: none;
+    font-weight: 700;
+  }
+  .slider-fade3 .owl-carousel .caption p {
+    color: #eee;
+    word-spacing: 2px;
+    animation-delay: 1.2s;
+    margin-bottom: 30px;
+  }
+  .slider-fade3 .owl-carousel .caption span {
+    display: inline-block;
+  }
+  .slider-fade3 .owl-carousel .caption .butn {
+    animation-delay: 1.4s;
+  }
+  .slider-fade3 .owl-theme .owl-dots {
+    position: absolute;
+    bottom: 5vh;
+    width: 100%;
+    left: 0;
+  }
+  .slider-fade3 .owl-theme .owl-dots .owl-dot span {
+    background: #ffffff;
+  }
+  .slider-fade3 .owl-theme .owl-dots .owl-dot:hover span,
+  .slider-fade3 .owl-theme .owl-dots .owl-dot.active span {
+    background: #00bcd1;
+  }
+  .slider-fade3 .owl-theme .owl-nav {
+    margin-top: -15rem;
+  }
+  .slider-fade3 .owl-theme .owl-nav [class*="owl-"] {
+    position: absolute;
+    right: inherit;
+    top: 0;
+    bottom: 0;
+    width: 60px;
+    height: 60px;
+    border: none;
+    background: rgba(255, 255, 255, 0.5) !important;
+    border-radius: 60px;
+    line-height: 65px;
+    transition-duration: 500ms;
+    left: 5vh;
+    text-align: center;
+    margin: auto;
+    opacity: 0.3;
+  }
+  .slider-fade3 .owl-theme .owl-nav .owl-next {
+    top: 0;
+    bottom: 0;
+    left: inherit;
+    right: 5vh;
+  }
+  .slider-fade3 .owl-theme .owl-nav .owl-next:hover {
+    opacity: 1;
+    background: #00bcd1 !important;
+  }
+  .slider-fade3 .owl-theme .owl-nav .owl-prev:hover {
+    opacity: 1;
+    background: #00bcd1 !important;
+  }
+  .slider-fade3 .owl-nav i,
+  .slider-fade3 .owl-nav span {
+    font-weight: 600;
+    color: #fff;
+    transition-duration: 500ms;
+    font-size: 20px;
+  }
+  .slider-fade3 .owl-nav .owl-next:hover i,
+  .slider-fade3 .owl-nav .owl-prev:hover i {
+    color: #fff;
+  }
+
+  /* banner */
+.owl-carousel .caption .overflow-hidden {
+    display: inline-block;
+  }
+  .owl-carousel .caption h3 {
+    font-weight: 200;
+    animation-delay: 0.5s;
+    position: relative;
+    display: inline-block;
+  }
+  .owl-carousel .caption h1 {
+    margin: 10px 0;
+    font-size: 80px;
+    font-weight: 600;
+    text-transform: uppercase;
+    animation-delay: 0.8s;
+  }
+  .owl-carousel .caption p {
+    font-size: 18px;
+    color: #eee;
+    word-spacing: 2px;
+    animation-delay: 1.2s;
+  }
+  .owl-carousel .caption span {
+    display: inline-block;
+    padding: 0.2em 0;
+  }
+  .owl-carousel .caption .butn {
+    animation-delay: 1.4s;
+  }
+  .owl-carousel .caption .butn i {
+    position: relative;
+    top: 1px;
+    z-index: 9;
+  }
+  .owl-carousel .caption .butn span {
+    padding: 0;
+  }
+  
+  @media screen and (max-width: 1199px) {
+    .slider-fade3 .owl-carousel .caption h1 {
+      font-size: 3.5rem;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .slider-fade3 .owl-carousel .caption .overflow-hidden {
+      margin-top: -10rem;
+    }
+    .slider-fade3 .owl-carousel .caption h1 {
+      font-size: 3rem;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .slider-fade3 .owl-carousel .caption .overflow-hidden {
+      margin-top: -6rem;
+    }
+    .slider-fade3 .owl-carousel .caption h1 {
+      font-size: 2.6rem;
+    }
+    .slider-fade3 .owl-carousel .caption h3 {
+      font-size: 1rem;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    .slider-fade3 .owl-carousel .caption h1 {
+      font-size: 2rem;
+    }
+  }
+  @media screen and (max-width: 479px) {
+    .slider-fade3 .owl-carousel .caption h1 {
+      font-size: 1.8rem;
+    }
+  }

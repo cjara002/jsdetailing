@@ -1,73 +1,92 @@
-import React from "react";
+import React, { useState } from "react";
 import TopBar from "../topBar/topBar";
-import Jlogo from "../../img/logo/JLogo.JPG";
+import JlogTrans from "../../img/logo/jsLogoTrans.png";
+import "./navBar.css";
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-const navBar = () => {
-    return (
-    <header className="header-style3 header-custom">
-    <TopBar />
-     <div className="navbar-default">
-       <div className="container" style={{maxWidth: "100%"}}>
-         <div className="row align-items-center">
-           <div className="col-12">
-             <div menu_area alt-font>
-               {/* nav bar start  */}
-               <nav className="navbar navbar-expand-lg navbar-light p-0 d-flex justify-content-between">
-                 {/* logo start */}
-                 <div className="navbar-header navbar-header-custom">
-                   <a
-                     href="/"
-                     className="navbar-brand xs-width-145px d-inline-block mr-lg-0"
-                   >
-                     <img src={Jlogo} alt="logo" id="logo" />
-                     {/* <img src={TempLogo} alt="logo"  id="logo"/> */}
-                     {/* <img src={Logo} alt="logo"  id="logo"/> */}
-                   </a>
-                 </div>
-                 {/* logo end */}
+const NavBar = (props) => {
+  // const { className } = props;
 
-                 {/* menu start */}
-                 <ul className="navbar-nav ml-auto" id="nav">
-                   <li>
-                     <a href="/">Services</a>
-                   </li>
-                   <li>
-                     <a href="/">Testimonials</a>
-                   </li>
-                   <li>
-                     <a href="/">Gallery</a>
-                   </li>
-                   <li className="ml-2">
-                     <a href="/" className="butn appointment">
-                       <i className="fas fa-calendar-day mr-1 align-middle display-28"></i>
-                       <span className="alt-font align-middle d-none d-xxl-inline-block">
-                         Book Now
-                       </span>
-                     </a>
-                   </li>
-                 </ul>
-                 {/* menu end */}
-                 {/* attri nav start */}
-                 {/* <div className="attr-nav">
-                   <ul>
-                     <li className="dropdown">
-                       <a href="/">
-                         <i className="fas fa-shopping-cart"></i>
-                         <span className="badge bg-primary">3</span>
-                       </a>
-                     </li>
-                   </ul>
-                 </div> */}
-                 {/* attri nav end */}
-               </nav>
-               {/* nav bar end  */}
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-     {/* can add modal here for the appointment button */}
-   </header>
-    )}
+  const [modal, setModal] = useState(false);
 
-export default navBar;
+  const toggle = () => setModal(!modal);
+  return (
+    <React.Fragment>
+      <header className="header-style3 header-custom">
+        <TopBar />
+        <div className="navbar-default">
+          <div className="container" style={{ maxWidth: "100%" }}>
+            <div className="row align-items-center">
+              <div className="col-12">
+                <div className="menu_area alt-font">
+                  <nav className="navbar navbar-expand-lg navbar-light p-0 d-flex justify-content-between">
+                    <div className="navbar-header navbar-header-custom">
+                      <a
+                        href="/"
+                        className="navbar-brand xs-width-145px d-inline-block mr-lg-0"
+                      >
+                        <img src={JlogTrans} alt="logo" id="logo" />
+                      </a>
+                    </div>
+  
+                    {/* Does not work */}
+                    <div className="navbar-toggler"></div>
+  
+                    <ul className="navbar-nav ml-auto" id="nav">
+                      {/* <ul className="navbar-nav ml-auto" id="nav" style={{display : "none"}}> */}
+                      <li>
+                        <a href="/">Services</a>
+                      </li>
+                      <li>
+                        <a href="/">Testimonials</a>
+                      </li>
+                      <li>
+                        <a href="/">Gallery</a>
+                      </li>
+                      <li className="ml-2">
+                        <a href="#!" className="butn appointment">
+                          <i className="fas fa-calendar-day mr-1 align-middle display-28"></i>
+                          <span
+                            className="alt-font align-middle d-none d-xxl-inline-block"
+                            onClick={toggle}
+                          >
+                            Book Now
+                          </span>
+                        </a>
+                        {/* <Button onClick={toggle}>Modal Here </Button> */}
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </header>
+        <Modal isOpen={modal} toggle={toggle} className="modalBg">
+          <ModalHeader toggle={toggle} className>Modal title</ModalHeader>
+          <ModalBody>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </ModalBody>
+          <ModalFooter>
+            <Button color="primary" onClick={toggle}>
+              Do Something
+            </Button>{" "}
+            <Button color="secondary" onClick={toggle}>
+              Cancel
+            </Button>
+          </ModalFooter>
+        </Modal>
+    </React.Fragment>
+
+  );
+};
+
+export default NavBar;

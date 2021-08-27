@@ -1,26 +1,18 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import "./App.css";
-// import Monster from "./components/Monster/monster.jsx";
-// import Jlogo from "./img/JLogo.JPG";
-// import TempLogo from "./img/tempLogo.png";
-// import Logo from "./img/logo.png";
-// import Audi from "./img/banner/audiBanner.jpg";
-import Audi from "./img/banner/audiBannerCustom.jpg";
-// import Interior from "./img/banner/interiorBanner.jpg";
-// import Customer from "./img/banner/customerBanner.jpg";
 import Car from "./img/services/servicesCar.jpg";
 import SUV from "./img/services/servicesSUV.jpg";
 import Truck from "./img/services/servicesTruck.jpg";
 import testBg from "./img/testimonial/washCar.jpg";
-// import face1 from "./img/testimonial/face1.jpg";
 import face2 from "./img/testimonial/smallFace.jpg";
 import backCar from "./img/gallery/BackBeforeAndAfter.jpg";
 import frontCar from "./img/gallery/FrontBeforeAndAfter.jpg";
 import interiorCar from "./img/gallery/InteriorBeforeAndAfter.jpg";
 import wash from "./img/CTA/carWash.jpg";
-// import TopBar from "./components/topBar/topBar.jsx";
 import NavBar from "./components/navBar/navBar.jsx";
+// import HeroBanner from "./components/hero/heroBannerStatic";
+import HeroBanner2 from "./components/hero/heroCarosel";
 
 class App extends React.Component {
   render() {
@@ -28,85 +20,8 @@ class App extends React.Component {
       <React.Fragment>
         <div className="main-wrapper">
           <NavBar />
-          {/* Hero Banner Start */}
-          <div className="screen-height">
-            <div className="slider-fade3 h-100">
-              <div className="owl-carousel owl-theme w-100 h-100">
-                <div
-                  className="item bg-img h-100 cover-background"
-                  data-overlay-dark="6"
-                  style={{ backgroundImage: `url(${Audi})` }}
-                >
-                  <div className="container h-100">
-                    <div className="d-table h-100 w-100">
-                      <div className="d-table-cell align-middle caption">
-                        <div className="overflow-hidden w-95 w-md-85 w-lg-80">
-                          <h3 className="text-gold mb-3">
-                            Unleash the best within
-                          </h3>
-                          <h1 className="text-white mb-4 w-85">
-                            Affordable Mobile Car Detailing
-                          </h1>
-                          <a href="#!" className="butn gold">
-                            <span>Learn More</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* <div
-                  className="item bg-img text-center cover-background"
-                  data-overlay-dark="6"
-                  style={{ backgroundImage: `url(${Interior})` }}
-                >
-                  <div className="container h-100">
-                    <div className="d-table h-100 w-100">
-                      <div className="d-table-cell align-middle caption">
-                        <div className="overflow-hidden w-95 w-md-85 w-lg-80">
-                          <h3 className="text-gold mb-3">
-                          Make your car last a lifetime
-                          </h3>
-                          <h1 className="text-white mb-4 w-85">
-                             We come to you weekdays or weekends
-                          </h1>
-                          <a href="#!" className="butn gold">
-                            <span>Learn More</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  className="item bg-img text-right cover-background"
-                  data-overlay-dark="6"
-                  style={{ backgroundImage: `url(${Customer})` }}
-                >
-                  <div className="container h-100">
-                    <div className="d-table h-100 w-100">
-                      <div className="d-table-cell align-middle caption">
-                        <div className="overflow-hidden w-95 w-md-85 w-lg-80">
-                          <h3 className="text-gold mb-3">
-                          Don't deal with the hassle of caring for your car
-                          </h3>
-                          <h1 className="text-white mb-4 w-85">
-                             Your satification is our goal
-                          </h1>
-                          <a href="#!" className="butn gold">
-                            <span>Learn More</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
-              </div>
-            </div>
-          </div>
-          {/* Hero Banner End */}
+          <HeroBanner2 /> 
+         
 
           {/* Info Section Start */}
           <section className="pb-0 p-lg-0 feature-box-03">
