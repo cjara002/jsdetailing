@@ -39,9 +39,18 @@
   background-color: #fff !important;
 }
 
+.bg-gold {
+  background: #9a8c67;
+}
+
+.bg-lightGold{
+  background: #f6e9c2;
+}
+
 .text-gold {
   color: #9a8c67 !important;
 }
+
 /*==============================
  *    Whole Project End
  *    ================================ */
@@ -130,9 +139,7 @@ a:active {
   background: #091e42;
 }
 
-.bg-gold {
-  background: #9a8c67;
-}
+
 
 .bg-primary-80 {
   background: rgba(0, 188, 209, 0.8);
@@ -1354,244 +1361,6 @@ nav ul a:hover::after {
     letter-spacing: 2px;
   }
 }
-/* feature box-03*/
-.feature-box-03 {
-  margin-top: 650px;
-}
-
-@media screen and (max-width: 1399px) {
-  .feature-box-03 {
-    margin-top: -70px;
-  }
-}
-@media screen and (max-width: 991px) {
-  .feature-box-03 {
-    margin-top: 0;
-  }
-}
-@media screen and (max-width: 767px) {
-  .feature-box-03 {
-    margin-top: 0;
-  }
-  .feature-box-03 h4 {
-    letter-spacing: 2px;
-  }
-}
-/*==============================
-*    Cards
-*    ================================ */
-/* card style1 */
-.card-style1 {
-  box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.15);
-  background: #fff;
-  height: 100%;
-}
-.card-style1 .card-img {
-  position: relative;
-  overflow: hidden;
-}
-.card-style1 .card-img:hover img {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-.card-style1 .card-img img {
-  width: 100%;
-  -webkit-filter: none;
-  filter: none;
-  transition: 0.3s;
-}
-.card-style1 .card-body {
-  padding: 30px;
-  text-align: left;
-}
-.card-style1 .card-body .tag {
-  font-size: 12px;
-  margin-bottom: 5px;
-  letter-spacing: 1px;
-}
-.card-style1 .card-body .read-more {
-  margin-top: 20px;
-  font-weight: 600;
-}
-.card-style1 .card-body .read-more:hover {
-  text-decoration: underline;
-}
-.card-style1 .card-body p {
-  line-height: 24px;
-}
-
-@media screen and (max-width: 991px) {
-  .card-style1 .card-body {
-    padding: 20px 25px;
-  }
-  .card-style1 .card-body p {
-    margin-bottom: 10px;
-  }
-}
-/* card style2 */
-.card-style2 {
-  box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.15);
-  background: #fff;
-  height: 100%;
-}
-.card-style2 .card-img {
-  position: relative;
-  overflow: hidden;
-}
-.card-style2 .card-img:hover img {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
-.card-style2 .card-img img {
-  width: 100%;
-  -webkit-filter: none;
-  filter: none;
-  transition: 0.3s;
-}
-.card-style2 .card-body {
-  padding: 20px;
-  text-align: left;
-}
-.card-style2 .card-body p {
-  line-height: 24px;
-}
-.card-style2 .card-body h5 {
-  line-height: normal;
-  text-transform: inherit;
-}
-
-/* card-style3 */
-.card-style3 .card-img {
-  position: relative;
-}
-.card-style3 .card-img img {
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  width: 100%;
-}
-.card-style3 .card-img .icon {
-  /* position: absolute; */
-  margin-top: -100px;
-  display: inline-block;
-  height: 70px;
-  width: 70px;
-  background: #fff;
-  text-align: center;
-  line-height: 70px;
-  left: 30px;
-  font-size: 22px;
-  color: rgb(246, 233, 194);
-  border-radius: 50%;
-  -webkit-box-shadow: 0px 10px 20px 0 #e1245433;
-  box-shadow: 0px 10px 20px 0 rgba(43, 40, 34, 0.2);
-  bottom: -35px;
-}
-.card-style3 .card-body h3 a:hover {
-  color: black !important;
-}
-
-/* card-style4 */
-.card-style4 {
-  box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.07);
-  border-radius: 10px;
-  height: 100%;
-}
-.card-style4 .card-body h3 a:hover {
-  color: #00bcd1 !important;
-}
-.card-style4 .card-img {
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-}
-
-/* card-style5 */
-.card-style5 {
-  height: 100%;
-}
-.card-style5:hover {
-  box-shadow: 0 0 18px rgba(0, 0, 0, 0.06);
-  transition: all 300ms ease-in-out;
-}
-
-/* card-style6 */
-.card-style6 {
-  box-shadow: 0 0 18px rgba(0, 0, 0, 0.06);
-}
-
-/* card-style7 */
-.card-style7 {
-  position: relative;
-}
-.card-style7:before {
-  position: absolute;
-  top: -25px;
-  right: -25px;
-  border-radius: 50%;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.1);
-  width: 100px;
-  height: 100px;
-  content: "";
-}
-.card-style7 .icon {
-  font-size: 32px;
-  color: #fff;
-  position: absolute;
-  right: 17px;
-  top: 17px;
-}
-.card-style7 .form-control {
-  background-color: rgba(225, 225, 225, 0.3);
-  border: 1px solid transparent;
-  color: #fff;
-}
-.card-style7 .form-control::-webkit-input-placeholder,
-.card-style7 .form-control::-moz-placeholder,
-.card-style7 .form-control:-ms-input-placeholder,
-.card-style7 .form-control::-ms-input-placeholder,
-.card-style7 .form-control::placeholder {
-  color: #fff;
-  opacity: 1;
-}
-
-/* card-style8 */
-.card-style8 .card-img {
-  position: relative;
-  overflow: hidden;
-}
-.card-style8 .card-img:before {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #000;
-  opacity: 0.5;
-  border-radius: 0.25rem;
-}
-.card-style8 .card-body {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-}
-
-/* card-style9 */
-.card-style9 {
-  box-shadow: 0 0 18px rgba(0, 0, 0, 0.06);
-}
-.card-style9 .card-body {
-  position: relative;
-}
-.card-style9 .card-label a {
-  position: absolute;
-  background: #00bcd1;
-  color: #fff;
-  border-radius: 30px;
-  top: -15px;
-  padding: 3px 20px;
-  font-size: 14px;
-}
 
 /*==============================
 *    Timetable Calendar
@@ -2642,11 +2411,7 @@ nav ul a:hover::after {
   padding-left: 2px;
   letter-spacing: 2px;
 }
-.accordion-style .card-body {
-  padding: 20px;
-  line-height: 24px;
-  text-align: left;
-}
+
 
 @media screen and (max-width: 767px) {
   .accordion-style .btn-link {
@@ -2716,12 +2481,7 @@ nav ul a:hover::after {
   position: absolute;
   color: #232323;
 }
-.accordion-style2 .card-body {
-  padding: 10px 15px;
-  text-align: left;
-  border: 1px solid #eee;
-  border-top: none;
-}
+
 
 /*accordion-style3*/
 .accordion-style3 {
@@ -2807,14 +2567,7 @@ nav ul a:hover::after {
   text-align: center;
   padding-left: 2px;
 }
-.accordion-style3 .card-body {
-  border-top: none;
-  border-left: 1px solid #ededed;
-  border-right: 1px solid #ededed;
-  border-bottom: 1px solid #ededed;
-  border-bottom-right-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
-}
+
 
 @media screen and (max-width: 1199px) {
   .accordion-style3 .btn-link {

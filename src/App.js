@@ -1,9 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import "./App.css";
-import Car from "./img/services/servicesCar.jpg";
-import SUV from "./img/services/servicesSUV.jpg";
-import Truck from "./img/services/servicesTruck.jpg";
+// import Car from "./img/services/servicesCar.jpg";
+// import SUV from "./img/services/servicesSUV.jpg";
+// import Truck from "./img/services/servicesTruck.jpg";
 import testBg from "./img/testimonial/washCar.jpg";
 import face2 from "./img/testimonial/smallFace.jpg";
 import backCar from "./img/gallery/BackBeforeAndAfter.jpg";
@@ -13,6 +13,8 @@ import wash from "./img/CTA/carWash.jpg";
 import NavBar from "./components/navBar/navBar.jsx";
 // import HeroBanner from "./components/hero/heroBannerStatic";
 import HeroBanner2 from "./components/hero/heroCarosel";
+import InfoSection from "./components/infoSection/info";
+import Services from "./components/services/services.jsx";
 
 class App extends React.Component {
   render() {
@@ -21,131 +23,9 @@ class App extends React.Component {
         <div className="main-wrapper">
           <NavBar />
           <HeroBanner2 /> 
-         
+          <InfoSection /> 
+          <Services />
 
-          {/* Info Section Start */}
-          <section className="pb-0 p-lg-0 feature-box-03">
-            <div className="container position-relative z-index-9">
-              <div className="row g-0">
-                <div className="col-4 bg-white"></div>
-                <div className="col-4 bg-white">
-                  <div className="p-2-0 p-xl-5 bg-gold h-100">
-                    <span className="mb-4 d-inline-block">
-                      {/* img here <img src="img/icons/icon-appointment.png" alt="..."> */}
-                      <h3 className=" mb-4 text-white">Operating Hours</h3>
-                      <ul className="mb-0 list-unstyled">
-                        <li className="text-grey display-30 border-bottom mb-2 pb-2 border-color-light-white">
-                          <span>Monday - Friday</span>
-                          <br />
-                          <span className="float-right">4:00 PM - 6:00 PM</span>
-                        </li>
-                        <li className="text-grey display-30 border-bottom mb-2 pb-2 border-color-light-white">
-                          <span>Saturday - Sunday</span>
-                          <br />
-                          <span className="float-right">7:00 AM - 7:00 PM</span>
-                        </li>
-                      </ul>
-                    </span>
-                  </div>
-                </div>
-                <div className="col-4 bg-white"></div>
-              </div>
-            </div>
-          </section>
-          {/* Infor Section End */}
-          <br />
-          {/* Services Section start */}
-          <section className="bg-gold border-bottom">
-            <div className="container">
-              <div className="mb-5 text-center">
-                <h2>SERVICES</h2>
-                {/* can add image here <img src="img/content/title-separator.png" alt="..."></img> */}
-              </div>
-              <div className="row">
-                <div className="col-md-6 col-lg-4 mb-2-9">
-                  <div className="card border-0 border-radius-10 card-style3">
-                    <div className="card-img">
-                      <img src={Car} alt="..."></img>
-                      <span className="icon">
-                        <i className="fas fa-car"></i>
-                      </span>
-                      <div className="card-body pb-2-0 pt-7 px-1-6 px-sm-2-6">
-                        <h3 className="h5 mb-3">
-                          <h4 className="text-dark">Car/Coupe </h4>
-                          <p>Starting at $35.00 </p>
-                          <a
-                            style={{ textDecoration: "none" }}
-                            href="#/"
-                            className="text-grey"
-                          >
-                            More details
-                            <i className="fas fa-arrow-circle-right align-middle ml-2">
-                              {" "}
-                            </i>
-                          </a>
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-md-6 col-lg-4 mb-2-9">
-                  <div className="card border-0 border-radius-10 card-style3">
-                    <div className="card-img">
-                      <img src={SUV} alt="..."></img>
-                      <span className="icon">
-                        <i className="fas fa-car"></i>
-                      </span>
-                      <div className="card-body pb-2-0 pt-7 px-1-6 px-sm-2-6">
-                        <h3 className="h5 mb-3">
-                          <h4 className="text-dark">Small/Mid SUV</h4>
-                          <p>Starting at $45.00</p>
-                          <a
-                            style={{ textDecoration: "none" }}
-                            href="#/"
-                            className="text-grey"
-                          >
-                            More details
-                            <i className="fas fa-arrow-circle-right align-middle ml-2">
-                              {" "}
-                            </i>
-                          </a>
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-md-6 col-lg-4 mb-2-9">
-                  <div className="card border-0 border-radius-10 card-style3">
-                    <div className="card-img">
-                      <img src={Truck} alt="..."></img>
-                      <span className="icon">
-                        <i className="fas fa-truck-monster"></i>
-                      </span>
-                      <div className="card-body pb-2-0 pt-7 px-1-6 px-sm-2-6">
-                        <h3 className="h5 mb-3">
-                          <h4 className="text-dark">Large SUV/Truck</h4>
-                          <p>Starting at $55.00</p>
-                          <a
-                            style={{ textDecoration: "none" }}
-                            href="#/"
-                            className="text-grey"
-                          >
-                            More details
-                            <i className="fas fa-arrow-circle-right align-middle ml-2">
-                              {" "}
-                            </i>
-                          </a>
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          {/* Services Section End */}
           {/* Reviews Section Start */}
           <section
             className="bg-img cover-background theme-overlay"
