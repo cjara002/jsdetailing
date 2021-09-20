@@ -1,60 +1,65 @@
+/*==============================
+ *    Navigation
+ *    ================================ */
+
+ nav {
+  top: 0px;
+  background-color: rgb(0, 0, 0, 0.9);
+  width: 100%;
+  height: 60px;
+  /* position: sticky; */
+}
+
+nav ul {
+  list-style: none;
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+  -webkit-animation: fadein 3s !important;
+  animation: fadein 3s;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 10px;
+}
+nav ul a {
+  display: inline-block;
+  padding: 10px;
+  font-size: medium;
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+nav ul a::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #9a8c67;
+  width: 0%;
+  height: 5px;
+  content: "";
+  transition: 0.5s;
+}
+nav ul a:hover::after {
+  width: 100%;
+}
 /* header style3 */
-.header-style3 .navbar-nav li.current > a {
-    color: #00bcd1;
-  }
-  .header-style3 .navbar > ul > li.current > a:after {
-    border-color: transparent #00bcd1 #00bcd1 transparent;
-  }
-  .header-style3.scrollHeader .navbar-nav li.current > a {
-    color: #00bcd1;
-  }
-  .header-style3.scrollHeader .navbar-nav li.current > a:hover {
-    color: #00bcd1;
-  }
-  .header-style3.scrollHeader .navbar > ul > li.current > a:after {
-    border-color: transparent #00bcd1 #00bcd1 transparent;
-  }
+
   .navbar-default .navbar-nav > li > a {
     color: #fff;
+    text-decoration: none;
   }
   
   .navbar-default .navbar-nav > li > a:hover {
     color: #9a8c67;
   }
 
-  .menu_area-light .navbar-nav li.current > a,
-.menu_area-light .navbar-nav li.active > a {
-  color: #00bcd1;
-}
-.menu_area-light .navbar > ul > li.current > a:after {
-  border-color: transparent #00bcd1 #00bcd1 transparent;
-}
-.menu_area-light.scrollHeader .navbar-nav li.current > a {
-  color: #00bcd1;
-}
-.menu_area-light.scrollHeader .navbar-nav li.current > a:hover {
-  color: #00bcd1;
-}
-.menu_area-light.scrollHeader .navbar-nav li.active > a {
-  color: #00bcd1;
-}
-.menu_area-light.scrollHeader .navbar > ul > li.current > a:after {
-  border-color: transparent #00bcd1 #00bcd1 transparent;
-}
-
-.navbar-nav li.current > a {
-    color: #00bcd1;
+  .hamburgerMenu{
+    display: none !important;
   }
   
-  /* menu area light */
-  .navbar-nav li.current > a,
-  .navbar-nav li.active > a {
-    color: #00bcd1;
-  }
-  
-  .navbar > ul > li.current > a:after {
-    border-color: transparent #00bcd1 #00bcd1 transparent;
-  }
 
 .modalBg{
     background-color: black !important;
@@ -115,6 +120,8 @@
   }
 }
 
+
+
 /* custom header */
 @media screen and (max-width: 1399px) {
     .header-custom .navbar-default .butn.appointment {
@@ -141,6 +148,38 @@
   }
 
   @media screen and (max-width: 991px) {
+    nav {
+      /* top: 0px; */
+      background-color: white;
+      /* width: 100%;
+      height: 60px; */
+      /* position: sticky; */
+    }
+    #nav{
+      display: none !important;
+    }
+
+    .hamburgerMenu{
+      display: block !important;
+      z-index: 999;
+      margin-top: -10px;
+    }
+
+    .navbar-toggler:before {
+      -webkit-transition: all .3s ease;
+      -ms-transition: all .3s ease;
+      transition: all .3s ease;
+      position: absolute;
+      top: 11px;
+      right: 10px;
+      display: block;
+      height: 2px;
+      width: 20px;
+      background: #fff;
+      content: "";
+  }
+    .onepage-nav .navbar-toggler {
+      top: 18px; }
     .header-custom .navbar-toggler {
       top: 16px;
     }
@@ -162,6 +201,25 @@
       .header-custom-fill .navbar-toggler:after {
         border-top: 2px solid #1e2022;
         border-bottom: 2px solid #1e2022;
+        /* position: absolute;
+        top: 17px;
+        right:10px;
+        display: block;
+        height: 8px;
+        width: 20px;
+        content: "" */
+      }
+
+      .navbar-toggler:after {
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        position: absolute;
+        top: 17px;
+        right:10px;
+        display: block;
+        height: 8px;
+        width: 20px;
+        content: ""
       }
       .header-custom-fill .navbar-toggler:before {
         background: #1e2022;

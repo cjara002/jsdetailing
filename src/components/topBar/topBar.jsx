@@ -1,5 +1,5 @@
 import React from "react";
-import "./topBar.css"
+import "./topBar.css";
 
 const topBar = () => {
   return (
@@ -12,13 +12,13 @@ const topBar = () => {
                 <ul class="list-unstyled">
                   <li className="border-right">
                     <i className="fas fa-phone"></i>
-                    <span className="text-gold"> 323-495-0763</span>
+                    <span className="text-gold"> 424-295-9452</span>
                   </li>
                   <li className="border-right">
                     <i className="fas fa-envelope"></i>
                     <span className="text-gold">
                       {" "}
-                      needabusinessemail@gmail.com
+                      jsmobiledetailingcompton@gmail.com
                     </span>
                   </li>
                 </ul>
@@ -31,6 +31,8 @@ const topBar = () => {
                     <a
                       href="https://www.facebook.com/Js-Mobile-Detailing-Compton-CA-108770091505804"
                       target="blank"
+                      data-toggle="tooltip"
+                      title="FaceBook"
                     >
                       <i className="fab fa-facebook"></i>
                     </a>
@@ -39,6 +41,8 @@ const topBar = () => {
                     <a
                       href="https://www.yelp.com/biz/js-mobile-detailing-compton"
                       target="blank"
+                      data-toggle="tooltip"
+                      title="Yelp"
                     >
                       <i className="fab fa-yelp"></i>
                     </a>
@@ -47,6 +51,8 @@ const topBar = () => {
                     <a
                       href="https://www.instagram.com/js_mobile_detailing_compton_ca/"
                       target="blank"
+                      data-toggle="tooltip"
+                      title="Instagram"
                     >
                       <i className="fab fa-instagram"></i>
                     </a>

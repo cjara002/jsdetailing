@@ -1,0 +1,116 @@
+.formSection{
+    background-color: #9a8c67;
+    color: white;
+}
+/* quform */
+.form-group {
+    margin-bottom: 1rem;
+  }
+  .form-group label {
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-control:focus {
+    outline: none ;
+    border-color: black ;
+    box-shadow: 0 0 10px #000000 ;
+  }
+  
+  .form-check-input:checked {
+    border-color: black;
+    background-color: black;
+  }
+  
+  .quform-input {
+    position: relative;
+  }
+  .quform-input .quform-errors-wrap {
+    position: absolute;
+    right: 8px;
+    top: 0;
+    line-height: normal;
+    z-index: 1;
+  }
+  
+  .quform-element > label {
+    font-weight: normal;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+    color: #6a747b;
+    font-size: 14px;
+  }
+  .quform-element > label .quform-required {
+    color: #cc0101;
+    font-size: 10px;
+  }
+  
+  .quform-inner input {
+    width: 100%;
+  }
+  
+  .quform-elements .quform-element textarea {
+    margin-bottom: 0;
+    padding: 8px 15px;
+    vertical-align: top;
+  }
+  .quform-elements .quform-element select {
+    margin-bottom: 0;
+    padding: 8px 35px 8px 15px;
+  }
+  
+  .quform-errors {
+    padding: 0;
+    margin: 0;
+    line-height: normal;
+  }
+  .quform-errors > .quform-error {
+    padding: 0;
+    background: none;
+    border: none;
+    float: none;
+    color: #f5543f;
+    font-size: 11px;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  
+  .quform-outer-no-js .quform-error {
+    padding: 0;
+    background: none;
+    border: none;
+    float: none;
+    color: #f5543f;
+    font-size: 11px;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  .quform-outer-no-js .quform-success-message {
+    padding: 0.75rem 1.25rem 0.75rem 3rem;
+  }
+  
+  .quform-has-error input,
+  .quform-has-error textarea,
+  .quform-has-error select,
+  .quform-has-error input[type="file"],
+  .quform-has-error .custom-file-label {
+    border-color: #f5543f;
+  }
+  
+  .quform-success-message {
+    padding: 0.75rem 1.25rem 0.75rem 3rem;
+  }
+  
+  .quform-submit-inner {
+    float: right;
+  }
+  
+  .quform-loading-wrap {
+    float: none;
+  }
+  .quform-loading-wrap .quform-loading {
+    display: inline-block;
+  }
+  
+  .light-validation .quform-errors > .quform-error {
+    color: #fff;
+  }
