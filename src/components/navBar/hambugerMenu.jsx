@@ -36,7 +36,7 @@ class hambugerMenu extends Component {
     return (
       //   <Router>
       <MDBContainer className="hamburgerMenu">
-        <MDBNavbar color="amber lighten-4" style={{ marginTop: "20px" }} light>
+        <MDBNavbar color="white" style={{ marginTop: "20px" }} light>
           <MDBContainer>
             <MDBNavbarBrand>
               <img
@@ -47,8 +47,8 @@ class hambugerMenu extends Component {
               />
             </MDBNavbarBrand>
             <MDBHamburgerToggler
-              color="#d3531a"
-              id="hamburger1"
+              color="#9a8c67"
+              id="hamburger3"
               onClick={() => this.toggleSingleCollapse("collapse1")}
             />
             <MDBCollapse isOpen={this.state.collapse1} navbar>

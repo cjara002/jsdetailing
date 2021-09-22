@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import TopBar from "../topBar/topBar";
 import JlogTrans from "../../img/logo/jsLogoTrans.png";
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import "./navBar.css";
 import HambugerMenu from "./hambugerMenu";
+import BookingModal from "../modal/bookingModal";
 
 const NavBar = (props) => {
   const [modal, setModal] = useState(false);
@@ -18,8 +18,12 @@ const NavBar = (props) => {
             <div className="row align-items-center">
               <div className="col-12">
                 <div className="menu_area alt-font">
-                  <nav className="navbar navbar-expand-lg navbar-light p-0 d-flex justify-content-between">
-                    <div className="navbar-header navbar-header-custom" id="nav">
+                  <nav className="navbar navbar-expand-lg navbar-light p-0 d-flex justify-content-between ">
+                    <HambugerMenu />
+                    <div
+                      className="navbar-header navbar-header-custom"
+                      id="nav"
+                    >
                       <a
                         href="/"
                         className="navbar-brand xs-width-145px d-inline-block mr-lg-0"
@@ -32,14 +36,7 @@ const NavBar = (props) => {
                         />
                       </a>
                     </div>
-
-                    {/* Does not work */}
-                    {/* <div className="navbar-toggler menu-opened"></div> */}
-                    {/* <div className="navbar-toggler"></div> */}
-                    {/* <ul className="navbar-nav ml-auto" id="nav"> */}
-
-                    < HambugerMenu />
-                      <ul className="navbar-nav ml-auto" id="nav">
+                    <ul className="navbar-nav ml-auto" id="nav">
                       <li>
                         <a href="/">Services</a>
                       </li>
@@ -49,8 +46,14 @@ const NavBar = (props) => {
                       <li>
                         <a href="/">Gallery</a>
                       </li>
-                      <li className="ml-2">
-                        <a href="#!" className="butn appointment">
+
+                      {/* <li className="ml-2">
+                        <a
+                          href="#!"
+                          className="butn appointment"
+                          data-toggle="tooltip"
+                          title="Book Now"
+                        >
                           <i className="fas fa-calendar-day mr-1 align-middle display-28"></i>
                           <span
                             className="alt-font align-middle d-none d-xxl-inline-block"
@@ -59,38 +62,34 @@ const NavBar = (props) => {
                             Book Now
                           </span>
                         </a>
-                        {/* <Button onClick={toggle}>Modal Here </Button> */}
-                      </li>
+                      </li> */}
                     </ul>
+                    <div className="attr-nav">
+                      <ul>
+                        <li class="ml-2" onClick={toggle}>
+                          <a
+                            href="#!"
+                            class="butn appointment"
+                            data-toggle="tooltip"
+                            title="Book Now"
+                          >
+                            <i class="far fa-calendar-plus mr-1 align-middle display-28"></i>{" "}
+                            <span class="alt-font align-middle  d-xxl-inline-block">
+                              Book Now
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </nav>
                 </div>
               </div>
             </div>
+
+            <BookingModal toggle={toggle} modal={modal}/>
           </div>
         </div>
       </header>
-      <Modal isOpen={modal} toggle={toggle} className="modalBg">
-        <ModalHeader toggle={toggle} className>
-          Modal title
-        </ModalHeader>
-        <ModalBody>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </ModalBody>
-        <ModalFooter>
-          <Button color="primary" onClick={toggle}>
-            Do Something
-          </Button>{" "}
-          <Button color="secondary" onClick={toggle}>
-            Cancel
-          </Button>
-        </ModalFooter>
-      </Modal>
     </React.Fragment>
   );
 };
