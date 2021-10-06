@@ -41,10 +41,10 @@ const NavBar = (props) => {
                         <a href="/">Services</a>
                       </li>
                       <li>
-                        <a href="/">Testimonials</a>
+                        <a href="/">Gallery</a>
                       </li>
                       <li>
-                        <a href="/">Gallery</a>
+                        <a href="/">Contact Us</a>
                       </li>
 
                       {/* <li className="ml-2">

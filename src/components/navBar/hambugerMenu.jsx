@@ -58,11 +58,11 @@ class hambugerMenu extends Component {
                   {/* <MDBNavLink to="#!">Services</MDBNavLink> */}
                 </MDBNavItem>
                 <MDBNavItem>
-                <a href="/#">Testimonials </a>
+                <a href="/#">Gallery </a>
                   {/* <MDBNavLink to="#!">Testimonials</MDBNavLink> */}
                 </MDBNavItem>
                 <MDBNavItem>
-                <a href="/#">Gallery </a>
+                <a href="/#">Contact Us </a>
                   {/* <MDBNavLink to="#!">Gallery</MDBNavLink> */}
                 </MDBNavItem>
               </MDBNavbarNav>

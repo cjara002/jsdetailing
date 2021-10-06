@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./form.css";
 import Logo from "../../img/logo/jsLogoTrans.png";
 // import 'bootstrap/dist/css/bootstrap.min.css';
+import lights from "../../img/contactForm/contactLights.jpg";
 
 
 const ContactForm = () => {
@@ -26,14 +27,14 @@ const ContactForm = () => {
   return (
     <React.Fragment>
       {/* Contact Form Start */}
-      <section className="formSection">
+      <section className="formSection" style={{background: `url(${lights})` }}>
         <div className="container">
           <div className="row">
             <div className="col">
               <div className="pl-lg-1-9">
                   {/* Image does not show */}
                 <image src={Logo} alt="image" className="mb-4" />
-                <h2 className="text-center">Get a free quote!</h2>
+                <h2 className="text-center">Get A Free Quote!</h2>
                 {/* EXAMPLE
                     <form
                       method="POST"
@@ -169,7 +170,7 @@ const ContactForm = () => {
                       {/* Submit start */}
                       <div className="col-md-12">
                         <div className="quform-submit-inner">
-                          <button className="butn gold" type="submit">
+                          <button className="butn transparent" type="submit">
                             <span>Send Message</span>
                           </button>
                         </div>

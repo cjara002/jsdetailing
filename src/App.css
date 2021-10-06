@@ -46,6 +46,9 @@
 .bg-lightGold{
   background: #f6e9c2;
 }
+.bg-dark{
+  background-color: rgb(0, 0, 0, .9);
+}
 
 .text-gold {
   color: #9a8c67 !important;
@@ -220,6 +223,17 @@ a.butn:focus {
   background: #1e2022;
 }
 
+.butn.transparent {
+  background: none;
+  border: 1px solid #dee2e6;
+  color: white;
+}
+.butn.transparent:hover {
+  background: #1e2022;
+  border: 1px solid #1e2022;
+  color: #fff;
+}
+
 a.butn.gold:hover,
 a.butn.gold:active,
 a.butn.gold:focus {
@@ -258,16 +272,7 @@ a.butn.gold:focus {
   line-height: 20px;
   padding: 12px 24px;
 }
-.butn.transparent {
-  background: none;
-  border: 1px solid #dee2e6;
-  color: #1e2022;
-}
-.butn.transparent:hover {
-  background: #00bcd1;
-  border: 1px solid #00bcd1;
-  color: #fff;
-}
+
 .butn.appointment {
   background: #f15b5a;
   color: #fff;
@@ -299,12 +304,6 @@ a.butn.gold:focus {
     letter-spacing: 2px;
   }
 }
-
-
-/* nav ul a:hover {
-    color: #000088;
-    text-decoration: none;
-  } */
 
 
 
@@ -373,91 +372,7 @@ a.butn.gold:focus {
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-/*==============================
-*    Page title
-*    ================================ */
-.page-title-section {
-  padding: 125px 0 125px;
-  text-align: center;
-}
-.page-title-section h1 {
-  font-size: 40px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  line-height: 1;
-  color: #fff;
-  margin-bottom: 0;
-}
-.page-title-section ul {
-  margin-bottom: 0;
-  margin-top: 15px;
-  text-align: center;
-  padding-left: 0;
-}
-.page-title-section ul li {
-  display: inline-block;
-}
-.page-title-section ul li:last-child a {
-  color: #fff;
-  font-weight: 600;
-}
-.page-title-section ul li:after {
-  content: "\f105";
-  font-weight: 700;
-  vertical-align: middle;
-  color: #fff;
-  font-family: Font Awesome\5 Free;
-  padding: 0 5px 0 10px;
-}
-.page-title-section ul li:last-child:after {
-  content: none;
-}
-.page-title-section ul li a {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
-}
-.page-title-section .active a,
-.page-title-section li.active:last-child a {
-  color: #fff;
-}
 
-@media screen and (max-width: 1199px) {
-  .page-title-section {
-    padding: 85px 0;
-  }
-  .page-title-section h1 {
-    font-size: 36px;
-    line-height: 42px;
-  }
-}
-@media screen and (max-width: 991px) {
-  .page-title-section {
-    padding: 70px 0;
-  }
-  .page-title-section h1 {
-    font-size: 30px;
-    line-height: 40px;
-  }
-  .page-title-section ul {
-    margin-top: 10px;
-  }
-  .page-title-section ul li a {
-    font-size: 13px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .page-title-section {
-    padding: 60px 0;
-  }
-  .page-title-section h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-  .page-title-section ul {
-    margin-top: 5px;
-  }
-}
 /*==============================
 *    Feature boxes
 *    ================================ */

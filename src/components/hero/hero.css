@@ -225,6 +225,23 @@ Slider
   .owl-carousel .caption .butn span {
     padding: 0;
   }
+
+  .photoDetails{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #9a8c67;
+  }
+
+  #photoLink {
+    color: #9a8c67;
+  }
+  #photoLink:hover {
+    color: #fff;
+  }
+
   
   @media screen and (max-width: 1199px) {
     .slider-fade3 .owl-carousel .caption h1 {

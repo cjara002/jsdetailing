@@ -1,6 +1,7 @@
 .formSection{
-    background-color: #9a8c67;
+    /* background-color: #9a8c67; */
     color: white;
+    padding: 10px;
 }
 /* quform */
 .form-group {

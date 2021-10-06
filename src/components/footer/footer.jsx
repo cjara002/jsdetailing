@@ -4,7 +4,7 @@ import "./footer.css";
 const footer = () => {
   return (
     <React.Fragment>
-      <footer className="bg-lightGold">
+      <footer className="bg-dark">
         <div className="py-4 border-top border-color-light-white">
           <div className="container">
             <div className="text-center">

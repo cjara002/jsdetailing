@@ -17,7 +17,7 @@ const heroCarosel = () => {
                   className={content.fontPosition}
                   data-overlay-dark="6"
                   style={{
-                    backgroundImage: `url(${content.imageBg})`
+                    backgroundImage: `url(${content.imageBg})`,
                   }}
                 >
                   <div className="container h-100" >
@@ -30,6 +30,15 @@ const heroCarosel = () => {
                                 <span>Learn More</span>
                             </a>
                         </div>
+                        <section className="photoDetails">
+                          <span>
+                            Photo by 
+                            <strong>
+                            <a id="photoLink" href={content.linkToProfile} target="blank">  {content.photographer} </a>
+                            </strong>
+                          </span>
+
+                        </section>
                       </div>
                     </div>
                   </div>
