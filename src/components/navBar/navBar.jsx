@@ -66,7 +66,7 @@ const NavBar = (props) => {
                     </ul>
                     <div className="attr-nav">
                       <ul>
-                        <li class="ml-2" onClick={toggle}>
+                        {/* <li class="ml-2" onClick={toggle}>
                           <a
                             href="#!"
                             class="butn appointment"
@@ -78,7 +78,7 @@ const NavBar = (props) => {
                               Book Now
                             </span>
                           </a>
-                        </li>
+                        </li> */}
                       </ul>
                     </div>
                   </nav>

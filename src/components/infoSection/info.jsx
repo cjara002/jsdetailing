@@ -1,5 +1,5 @@
 import React from "react";
-import Time from "../../img/info/time.png";
+import Time from "../../img/info/time2.png";
 import Person from "../../img/info/person.png";
 import Wash from "../../img/info/washing.png";
 import "./info.css";
@@ -49,7 +49,7 @@ const info = () => {
                 </span>
                 <h3 className=" mb-4 text-grey">Book An Appointment </h3>
                 <p className="text-grey display-30 infoText">
-                  Let's us know how we can help you. To make an appointment , call 424-295-9452 or book below.
+                  Let's us know how we can help you. To make an appointment, call 424-295-9452 or book below.
                 </p>
               </div>
             </div>

@@ -14,6 +14,11 @@
 /* .modal-backdrop{z-index: 1050 !important;}
 .modal{z-index: 1060 !important; } */
 
+.random {
+  border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
 .modal {
   background: rgba(0, 0, 0, 0.5); 
 }
@@ -30,10 +35,12 @@
 /* card-style3 */
 .card-style3 .card-img {
     position: relative;
+    
+    
   }
   .card-style3 .card-img img {
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    /* border-top-right-radius: 15px;
+    border-top-left-radius: 15px; */
     width: 100%;
   }
   .card-style3 .card-img .icon {

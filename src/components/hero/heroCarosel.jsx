@@ -26,9 +26,9 @@ const heroCarosel = () => {
                         <div className="overflow-hidden w-95 w-md-85 w-lg-80" >
                             <h3 className="text-gold mb-3" style={{textTransform: "uppercase", fontWeight: "bold"}}>{content.description}</h3>
                             <h1 className="text-white mb-4 w-85" >{content.title}</h1>
-                            <a href="#!" className="butn gold">
+                            {/* <a href="#!" className="butn gold">
                                 <span>Learn More</span>
-                            </a>
+                            </a> */}
                         </div>
                         <section className="photoDetails">
                           <span>
