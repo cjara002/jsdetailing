@@ -158,11 +158,11 @@
     max-width: 1170px;
   }
 }
-@media screen and (min-width: 1400px) {
+/* @media screen and (min-width: 1400px) {
   .container {
     max-width: 1320px;
   }
-}
+} */
 @media screen and (max-width: 991px) {
   .mfp-container {
     padding-left: 15px;

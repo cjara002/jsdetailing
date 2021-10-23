@@ -10,7 +10,8 @@ const content =
         description:"Fair Friendly Service",
         fontPosition: "item bg-img h-100 cover-background",
         photographer: "Alex Amorales",
-        linkToProfile: "https://www.pexels.com/@alex-amorales-321095?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
+        linkToProfile: "https://www.pexels.com/@alex-amorales-321095?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels",
+        source:"/service"
 
     },
     {
@@ -19,7 +20,8 @@ const content =
         description:" Make your car last a lifetime",
         fontPosition: "item bg-img text-center cover-background",
         photographer: "Element5",
-        linkToProfile: "https://www.pexels.com/@element5?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
+        linkToProfile: "https://www.pexels.com/@element5?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels",
+        source:"/contact"
     },
     {
         imageBg: Interior,
@@ -27,7 +29,8 @@ const content =
         description:"Don't deal with the hassle of caring for your car",
         fontPosition: "item bg-img text-right cover-background",
         photographer: "Pixabay",
-        linkToProfile: "https://www.pexels.com/@pixabay?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels"
+        linkToProfile: "https://www.pexels.com/@pixabay?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels",
+        source:"/gallery"
     }
 ]
 

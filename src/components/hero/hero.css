@@ -115,6 +115,7 @@ Slider
     font-size: 4rem;
     text-transform: none;
     font-weight: 700;
+    /* z-index: -100; */
   }
   .slider-fade3 .owl-carousel .caption p {
     color: #eee;
