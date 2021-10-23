@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import TopBar from "../topBar/topBar";
-import JlogTrans from "../../img/logo/jsLogoTrans.png";
+import JlogTrans from "../../img/logo/jsLogoTransWhite.png";
 import "./navBar.css";
 import HambugerMenu from "./hambugerMenu";
 import BookingModal from "../modal/bookingModal";
+import {Link} from "react-router-dom";
 
 const NavBar = (props) => {
   const [modal, setModal] = useState(false);
@@ -38,13 +39,16 @@ const NavBar = (props) => {
                     </div>
                     <ul className="navbar-nav ml-auto" id="nav">
                       <li>
-                        <a href="/">Services</a>
+                        <Link to="/">Home</Link>
                       </li>
                       <li>
-                        <a href="/">Gallery</a>
+                        <Link to="/services">Services</Link>
                       </li>
                       <li>
-                        <a href="/">Contact Us</a>
+                        <Link to="/gallery">Gallery</Link>
+                      </li>
+                      <li>
+                        <Link to="/contact">Contact Us</Link>
                       </li>
 
                       {/* <li className="ml-2">

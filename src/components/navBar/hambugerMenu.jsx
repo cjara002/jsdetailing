@@ -12,6 +12,7 @@ import {
 // import { BrowserRouter as Router } from "react-router-dom";
 import JlogTrans from "../../img/logo/jsLogoTrans.png";
 import "./navBar.css";
+import {Link} from "react-router-dom"; 
 
 class hambugerMenu extends Component {
   state = {
@@ -54,16 +55,16 @@ class hambugerMenu extends Component {
             <MDBCollapse isOpen={this.state.collapse1} navbar>
               <MDBNavbarNav left>
                 <MDBNavItem>
-               <a href="/#">Services</a> 
-                  {/* <MDBNavLink to="#!">Services</MDBNavLink> */}
+               <Link to="/">Home</Link> 
                 </MDBNavItem>
                 <MDBNavItem>
-                <a href="/#">Gallery </a>
-                  {/* <MDBNavLink to="#!">Testimonials</MDBNavLink> */}
+               <Link to="/services">Services</Link> 
                 </MDBNavItem>
                 <MDBNavItem>
-                <a href="/#">Contact Us </a>
-                  {/* <MDBNavLink to="#!">Gallery</MDBNavLink> */}
+                <Link to="/gallery">Gallery </Link>
+                </MDBNavItem>
+                <MDBNavItem>
+                <Link to="/contact">Contact Us </Link>
                 </MDBNavItem>
               </MDBNavbarNav>
             </MDBCollapse>

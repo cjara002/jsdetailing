@@ -10,7 +10,8 @@ const heroCarosel = () => {
       <div className="screen-height">
         <div className="slider-fade3 h-100">
           <div className="owl-carousel owl-theme w-100 h-100">
-            <Slider id="sliderWrapper">
+            {/* <Slider id="sliderWrapper" autoplay={3000}> */}
+            <Slider id="sliderWrapper" autoplay={1500}>
               {Content.map((content, index) => (
                 <div
                   key={index}
