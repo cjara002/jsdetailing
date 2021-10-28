@@ -31,7 +31,6 @@ const services = () => {
                           style={{ textDecoration: "none" }}
                           href="#/"
                           className="text-grey"
-                          // onClick={this.toggleOpen}
                         >
                           More details
                           <i className="fas fa-arrow-circle-right align-middle ml-2">

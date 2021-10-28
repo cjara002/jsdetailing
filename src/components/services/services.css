@@ -64,4 +64,119 @@
     color: black !important;
   }
 
+  .box-hover:hover .copy-element, .box-hover:hover .source-element {
+    opacity: 1; }
+
+    .box-hover {
+      position: relative; }
+      .box-hover .container {
+        position: relative; }
+        * price table2 */
+        .price .item {
+          padding: 0 0 30px 0;
+          background: #f9f9f9;
+          border-radius: 5px;
+          transition: all 0.3s;
+        }
+        .price .item:hover {
+          box-shadow: 0px 5px 40px 0px rgba(148, 146, 245, 0.2);
+        }
+        .price .type {
+          padding: 15px 0;
+          background: #1e2022;
+        }
+        .price .type h4 {
+          font-size: 25px;
+          color: #fff;
+          margin-bottom: 0;
+        }
+        .price .value {
+          padding: 30px 0 15px 0;
+          position: relative;
+        }
+        .price .value h3 {
+          display: inline-block;
+          padding-right: 10px;
+          font-size: 50px;
+          font-weight: 700;
+          position: relative;
+          margin-bottom: 0;
+        }
+        .price .value h3 span {
+          font-size: 14px;
+          position: absolute;
+          top: 5px;
+          right: 0;
+        }
+        .price .value .per {
+          font-size: 13px;
+          color: #00bcd1;
+        }
+        .price .features li {
+          margin: 15px 0;
+        }
+        .price .order {
+          padding-top: 15px;
+          position: relative;
+        }
+        .price .active {
+          box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.1);
+        }
+        .price .active .type {
+          background: #00bcd1;
+        }
+        
+        @media screen and (max-width: 1199px) {
+          .price .item {
+            padding: 0 0 30px 0;
+          }
+          .price .type {
+            padding: 12px 0;
+          }
+          .price .type h4 {
+            font-size: 22px;
+          }
+          .price .value {
+            padding: 25px 0 10px 0;
+          }
+          .price .value h3 {
+            font-size: 36px;
+          }
+          .price .value h3 span {
+            font-size: 13px;
+          }
+          .price .features li {
+            margin: 12px 0;
+          }
+          .price .order {
+            padding-top: 15px;
+          }
+        }
+        @media screen and (max-width: 991px) {
+          .price .item {
+            padding: 0 0 25px 0;
+          }
+          .price .type {
+            padding: 10px 0;
+          }
+          .price .type h4 {
+            font-size: 20px;
+          }
+          .price .value {
+            padding: 20px 0 10px 0;
+          }
+          .price .value h3 {
+            font-size: 30px;
+          }
+          .price .value h3 span {
+            font-size: 12px;
+          }
+          .price .features li {
+            margin: 10px 0;
+          }
+          .price .order {
+            padding-top: 12px;
+          }
+        }
+
   
