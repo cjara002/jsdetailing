@@ -110,7 +110,7 @@
         }
         .price .value .per {
           font-size: 13px;
-          color: #00bcd1;
+          color: #9a8c67;
         }
         .price .features li {
           margin: 15px 0;
@@ -123,7 +123,7 @@
           box-shadow: 0px 5px 40px 0px rgba(0, 0, 0, 0.1);
         }
         .price .active .type {
-          background: #00bcd1;
+          background: #9a8c67;
         }
         
         @media screen and (max-width: 1199px) {
