@@ -29,7 +29,7 @@ const services = () => {
                         <p>Starting at $35.00 </p>
                         <a
                           style={{ textDecoration: "none" }}
-                          href="#/"
+                          href="/services"
                           className="text-grey"
                         >
                           More details
@@ -57,7 +57,7 @@ const services = () => {
                         <p>Starting at $45.00</p>
                         <a
                           style={{ textDecoration: "none" }}
-                          href="#/"
+                          href="/services"
                           className="text-grey"
                         >
                           More details
@@ -85,7 +85,7 @@ const services = () => {
                         <p>Starting at $55.00</p>
                         <a
                           style={{ textDecoration: "none" }}
-                          href="#/"
+                          href="/services"
                           className="text-grey"
                         >
                           More details

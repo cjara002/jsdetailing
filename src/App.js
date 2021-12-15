@@ -13,6 +13,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./components/home/home";
 import TableOfServices from "./components/services/tableOfServices";
 
+// var IgFeed = require("./components/gallery/galleryInstagram.html");
+
 class App extends React.Component {
   render() {
     return (
@@ -31,6 +33,7 @@ class App extends React.Component {
               </Route>
               <Route exact path="/gallery">
                 <Gallery2 />
+                {/* <iframe title = "Ig Feed for ..."src={IgFeed}></iframe> */}
               </Route>
               <Route exact path="/contact">
                 <ContactForm />
