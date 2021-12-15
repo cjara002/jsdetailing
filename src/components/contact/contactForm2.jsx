@@ -13,21 +13,21 @@ class ContactForm2 extends React.Component {
     message: " ",
   };
 
-  onSubmit = (event) => {
-    console.log("on Submit:", ...this.state);
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encodeURI({ "form-name": "contact", ...this.state }),
-    })
-      .then(() => alert("Success!"))
-      .catch((error) => alert(error));
-    event.preventDefault();
-  };
+  // onSubmit = (event) => {
+  //   console.log("on Submit:", ...this.state);
+  //   fetch("/", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     body: encodeURI({ "form-name": "contact", ...this.state }),
+  //   })
+  //     .then(() => alert("Success!"))
+  //     .catch((error) => alert(error));
+  //   event.preventDefault();
+  // };
 
-  handleChange = (e) => {
-    this.setState({ [e.target.name]: e.target.value });
-  };
+  // handleChange = (e) => {
+  //   this.setState({ [e.target.name]: e.target.value });
+  // };
 
   render() {
     return (
