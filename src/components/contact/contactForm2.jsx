@@ -46,18 +46,19 @@ class ContactForm2 extends React.Component {
                   <h2 className="text-center">Get A Free Quote!</h2>
                   <form
                     method="POST"
-                    name="contact"
+                    name="contactv2"
                     className="quform"
                     action="/"
-                    encType="multipart/form-data"
+                    //encType="multipart/form-data"
                     data-netlify="true"
+                    onSubmit="submit"
                   >
+                    <input type="hidden" name="form-name" value="contactv2"/>
                     <div className="quform-elements">
                       <div className="row">
                         {/* Input start */}
                         <div className="col-md-6">
                           <div className="quform-element form-group">
-                          <input type="hidden" name="form-name" value="contact" />
                             <label for="name" className="text-white">
                               {" "}
                               Full Name
