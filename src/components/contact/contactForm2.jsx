@@ -44,14 +44,6 @@ class ContactForm2 extends React.Component {
                   {/* Image does not show */}
                   <image src={Logo} alt="image" className="mb-4" />
                   <h2 className="text-center">Get A Free Quote!</h2>
-                  {/* EXAMPLE
-                    <form
-                      method="POST"
-                      name="contact"
-                      action="/success/"
-                      id="formContact"
-                      data-netlify="true"
-                    > */}
                   <form
                     method="POST"
                     name="contact"
@@ -59,13 +51,13 @@ class ContactForm2 extends React.Component {
                     action="/"
                     encType="multipart/form-data"
                     data-netlify="true"
-                    // onSubmit={onSubmit}
                   >
                     <div className="quform-elements">
                       <div className="row">
                         {/* Input start */}
                         <div className="col-md-6">
                           <div className="quform-element form-group">
+                          <input type="hidden" name="form-name" value="contact" />
                             <label for="name" className="text-white">
                               {" "}
                               Full Name
@@ -79,7 +71,7 @@ class ContactForm2 extends React.Component {
                                 id="name"
                                 type="text"
                                 name="fullName"
-                                value={fullName}
+                                // value={fullName}
                               />
                             </div>
                           </div>
@@ -100,7 +92,7 @@ class ContactForm2 extends React.Component {
                                 id="email"
                                 type="email"
                                 name="email"
-                                value={email}
+                                // value={email}
                               />
                             </div>
                           </div>
@@ -120,7 +112,7 @@ class ContactForm2 extends React.Component {
                                 id="subject"
                                 type="text"
                                 name="subject"
-                                value={subject}
+                                // value={subject}
                               />
                             </div>
                           </div>
@@ -140,7 +132,7 @@ class ContactForm2 extends React.Component {
                                 id="phone"
                                 type="text"
                                 name="phone"
-                                value={phone}
+                                // value={phone}
                               />
                             </div>
                           </div>
@@ -161,7 +153,7 @@ class ContactForm2 extends React.Component {
                                 name="message"
                                 rows="3"
                                 placeholder="What kind of car do you have? What kind of cleaning do you need today?"
-                                value={message}
+                                // value={message}
                               />
                             </div>
                           </div>
@@ -193,4 +185,4 @@ class ContactForm2 extends React.Component {
   }
 }
 
-export default ContactForm;
+export default ContactForm2;
