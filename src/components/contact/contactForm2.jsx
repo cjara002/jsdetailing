@@ -49,11 +49,11 @@ class ContactForm2 extends React.Component {
                     name="contactv2"
                     className="quform"
                     action="/"
-                    //encType="multipart/form-data"
+                    encType="multipart/form-data"
                     data-netlify="true"
                     onSubmit="submit"
                   >
-                    {/* <input type="hidden" name="form-name" value="contactv2"/> */}
+                    <input type="hidden" name="form-name" value="contactv2"/>
                     <div className="quform-elements">
                       <div className="row">
                         {/* Input start */}
