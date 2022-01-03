@@ -48,7 +48,7 @@ class hambugerMenu extends Component {
               />
             </MDBNavbarBrand>
             <MDBHamburgerToggler
-              color="#9a8c67"
+              color="#2E2E2E"
               id="hamburger3"
               onClick={() => this.toggleSingleCollapse("collapse1")}
             />

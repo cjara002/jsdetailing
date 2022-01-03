@@ -1,19 +1,20 @@
 # J's Mobile Detailing Website
 
-Building a website that displays a service/product.
+Building a website that displays a service/product relating to car wash and auto detailing.
 ___
 
 ## Current Development
 
-Looking to deploy this website using Netlify or AWS. 
+Working on implementing IG Feed on my webpage.
 
 ## Latest Developmet
 
-Please see Current Development...
+Made site mobile friendly.
 
 ## Technology Used
 
-This website is built with custom components using React and React Hooks. 
+This website is built with custom components using React and React Hooks. Hosted using Netlify.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e6c84df6-e248-4d7d-a68d-e7ccd5bf054a/deploy-status)](https://app.netlify.com/sites/awesome-nobel-7832f0/deploys)
 
 ## Contributor
 

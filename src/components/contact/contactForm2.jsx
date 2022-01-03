@@ -6,7 +6,7 @@ import lights from "../../img/contactForm/contactLights.jpg";
 
 class ContactForm2 extends React.Component {
   state = {
-    fullName: " ",
+    name: " ",
     email: " ",
     subject: "",
     phone: " ",
@@ -71,7 +71,7 @@ class ContactForm2 extends React.Component {
                                 className="form-control"
                                 id="name"
                                 type="text"
-                                name="fullName"
+                                name="name"
                                 // value={fullName}
                               />
                             </div>

@@ -5,7 +5,7 @@ Slider
     height: 90vh !important; 
   }
   
-  .sliderInnerSection {
+  /* .sliderInnerSection {
     padding: 0 70px;
     box-sizing: border-box;
     position: absolute;
@@ -15,7 +15,7 @@ Slider
     color: White;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-  }
+  } */
   
   .previousButton:hover,
   .nextButton:hover {
@@ -24,7 +24,7 @@ Slider
     opacity: 0.7;
   }
   
-  /* .slide.animateIn.previous h1,
+  .slide.animateIn.previous h1,
   .slide.current h1,
   .slide.animateIn.next h1,
   .slide.animateIn.previous button,
@@ -41,7 +41,8 @@ Slider
     -webkit-transition-delay: 0.9s;
     transition-delay: 0.9s;
     opacity: 1;
-  } */
+  } 
+
   .slide::before {
     content: "";
     display: block;
@@ -276,5 +277,12 @@ Slider
   @media screen and (max-width: 479px) {
     .slider-fade3 .owl-carousel .caption h1 {
       font-size: 1.8rem;
+    }
+    .slider {
+      height: 65vh !important; 
+    }
+    .butn {
+      padding: 7px 14px;
+      font-size: 13px;
     }
   }
