@@ -30,7 +30,8 @@ const heroCarosel = () => {
                            
                               <h3 className="text-gold mb-3" style={{textTransform: "uppercase", fontWeight: "bold"}}>{content.description}</h3>
                               <h1 className="text-white mb-4 w-85" >{content.title}</h1>
-                              <Link to={content.source} className="butn gold">Learn More</Link>
+                              {/* Can't get the link to appear and disappear */}
+                              <Link to={content.source} className="butn gold buttonAnimation">Learn More</Link>
                          
                         </div>
                         <section className="photoDetails">

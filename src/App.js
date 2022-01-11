@@ -6,13 +6,15 @@ import HeroBanner2 from "./components/hero/heroCarosel";
 // import HeroBannerStatic from "./components/hero/heroBannerStatic";
 // import InfoSection from "./components/infoSection/info";
 // import Services from "./components/services/services.jsx";
-import Gallery2 from "./components/gallery/gallery2.jsx";
+// import Gallery2 from "./components/gallery/gallery2.jsx";
 // import ContactForm from "./components/contact/contactForm.jsx";
 import ContactForm2 from "./components/contact/contactForm2.jsx";
 import Footer from "./components/footer/footer.jsx";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./components/home/home";
 import TableOfServices from "./components/services/tableOfServices";
+// import InstagramFeed from "react-ig-feed";
+// import "react-ig-feed/dist/index.css";
 
 // var IgFeed = require("./components/gallery/galleryInstagram.html");
 

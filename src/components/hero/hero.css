@@ -5,18 +5,6 @@ Slider
     height: 90vh !important; 
   }
   
-  /* .sliderInnerSection {
-    padding: 0 70px;
-    box-sizing: border-box;
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    color: White;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  } */
-  
   .previousButton:hover,
   .nextButton:hover {
     background-color: #9a8c67;
@@ -24,24 +12,7 @@ Slider
     opacity: 0.7;
   }
   
-  .slide.animateIn.previous h1,
-  .slide.current h1,
-  .slide.animateIn.next h1,
-  .slide.animateIn.previous button,
-  .slide.current button,
-  .slide.animateIn.next button,
-  .slide.animateIn.previous p,
-  .slide.current p,
-  .slide.animateIn.next p,
-  .slide.animateIn.previous section *,
-  .slide.current section *,
-  .slide.animateIn.next section * {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    -webkit-transition-delay: 0.9s;
-    transition-delay: 0.9s;
-    opacity: 1;
-  } 
+
 
   .slide::before {
     content: "";
@@ -243,6 +214,71 @@ Slider
   #photoLink:hover {
     color: #fff;
   }
+
+  /* ========================================================================
+Slider Animation
+ ========================================================================== */
+h1 {
+	transition: all 0.3s ease;
+	-webkit-transform: translateY(-20px);
+					transform: translateY(-20px);
+	opacity: 0;
+}
+
+.buttonAnimation {
+	transition: all 0.3s ease;
+	/* -webkit-transform: translateY(20px);
+					transform: translateY(20px); */
+	/* opacity: 0; */
+}
+
+h3 {
+	transition: all 0.3s ease;
+	-webkit-transform: translateY(20px);
+					transform: translateY(20px);
+	opacity: 0;
+}
+
+.slide.animateIn.previous h1,
+.slide.current h1,
+.slide.animateIn.next h1,
+.slide.animateIn.previous button,
+.animateIn.buttonAnimation,
+.slide.animateIn.next button,
+.slide.animateIn.previous p,
+.slide.current h3,
+.slide.animateIn.next p,
+.slide.animateIn.previous section *,
+.slide.current section *,
+.slide.animateIn.next section * {
+	-webkit-transform: translateX(0);
+	        transform: translateX(0);
+	-webkit-transition-delay: .9s;
+					transition-delay: .9s;
+					opacity: 1;
+}
+
+.animateIn.buttonAnimation{
+	-webkit-transition-delay: 1.3s;
+					transition-delay: 1.3s;
+}
+
+
+
+.slide.animateOut h1 {
+	-webkit-transition-delay: .3s;
+					transition-delay: .3s;
+}
+
+.slide.animateOut h3 {
+	-webkit-transition-delay: .2s;
+					transition-delay: .2s;
+}
+
+.slide.animateOut.buttonAnimation {
+	-webkit-transition-delay: .1s;
+					transition-delay: .1s;
+}
 
   
   @media screen and (max-width: 1199px) {

@@ -19,6 +19,7 @@
     "react-dom": "^17.0.2",
     "react-grid-gallery": "^0.5.5",
     "react-i18next": "^11.10.0",
+    "react-ig-feed": "^1.0.4",
     "react-landing-page": "^2.0.2",
     "react-redux": "^7.2.4",
     "react-reveal": "^1.2.2",

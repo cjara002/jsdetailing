@@ -9797,6 +9797,11 @@ react-i18next@^11.10.0:
     "@babel/runtime" "^7.14.0"
     html-parse-stringify "^3.0.1"
 
+react-ig-feed@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/react-ig-feed/-/react-ig-feed-1.0.4.tgz#a08dc99f311b37f31de9d33299d2604323d12526"
+  integrity sha512-XgPV3AAcZp9aZAr5w+EjWLsMdtrVHxyB0A7DPm5NeCkm5JocLvHQ0wKlafS6eg1mfo+2S6Dxj6YbwSgikpsrbw==
+
 react-image-lightbox@5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/react-image-lightbox/-/react-image-lightbox-5.1.1.tgz#872d1a4336b5a6410ea7909b767cf59014081004"
