@@ -47,9 +47,9 @@ const NavBar = (props) => {
                       <li>
                         <Link to="/gallery">Gallery</Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <Link to="/contact">Contact Us</Link>
-                      </li>
+                      </li> */}
 
                       {/* <li className="ml-2">
                         <a

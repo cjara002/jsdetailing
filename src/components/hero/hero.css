@@ -199,7 +199,7 @@ Slider
     padding: 0;
   }
 
-  .photoDetails{
+   .photoDetails{
     position: absolute;
     bottom: 20px;
     left: 20px;
@@ -213,7 +213,7 @@ Slider
   }
   #photoLink:hover {
     color: #fff;
-  }
+  } 
 
   /* ========================================================================
 Slider Animation
@@ -232,12 +232,12 @@ h1 {
 	/* opacity: 0; */
 }
 
-h3 {
+/* h3 {
 	transition: all 0.3s ease;
 	-webkit-transform: translateY(20px);
 					transform: translateY(20px);
 	opacity: 0;
-}
+} */
 
 .slide.animateIn.previous h1,
 .slide.current h1,

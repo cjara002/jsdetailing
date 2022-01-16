@@ -63,9 +63,9 @@ class hambugerMenu extends Component {
                 <MDBNavItem>
                 <Link to="/gallery">Gallery </Link>
                 </MDBNavItem>
-                <MDBNavItem>
+                {/* <MDBNavItem>
                 <Link to="/contact">Contact Us </Link>
-                </MDBNavItem>
+                </MDBNavItem> */}
               </MDBNavbarNav>
             </MDBCollapse>
           </MDBContainer>

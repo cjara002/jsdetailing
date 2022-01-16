@@ -5,7 +5,7 @@ import chevyAfter from "../../img/gallery/Chevy Silver after COMBINED.jpg";
 import chevyBefore from "../../img/gallery/Chevy Silver Before COMBINED.jpg";
 import hondaFront from "../../img/gallery/Omar with Logo Front.jpg"
 import hondaBack from "../../img/gallery/Omar Honda Back.jpg";
-import prices from "../../img/gallery/pricesLargerFont.PNG";
+import FordTruck from "../../img/gallery/FordTruck.jpg";
 
 const galleryContent = [
     {
@@ -65,11 +65,11 @@ const galleryContent = [
       margin: 10
     },
     {
-      src: prices,
-      thumbnail: prices,
+      src: FordTruck,
+      thumbnail: FordTruck,
       thumbnailWidth: 320,
       thumbnailHeight: 212,
-      caption: "Prices for Services",
+      caption: "Interior and Exterior on Ford.",
       margin: 10
     },
   ];
