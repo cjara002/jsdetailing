@@ -13,10 +13,8 @@ import Footer from "./components/footer/footer.jsx";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./components/home/home";
 import TableOfServices from "./components/services/tableOfServices";
-// import InstagramFeed from "react-ig-feed";
-// import "react-ig-feed/dist/index.css";
+// import HeroBannerSlides from "./components/hero/heroBannerSlides.jsx";
 
-// var IgFeed = require("./components/gallery/galleryInstagram.html");
 
 class App extends React.Component {
   render() {
@@ -26,6 +24,7 @@ class App extends React.Component {
           <div className="main-wrapper">
             <NavBar />
             <HeroBanner2 />
+            {/* <HeroBannerSlides /> */}
             <Switch>
               <Route exact path="/">
                 <Home />

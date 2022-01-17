@@ -1,0 +1,155 @@
+/* ========================================================================
+Slider
+ ========================================================================== */
+  
+  .sliderContent {
+    text-align: center;
+  }
+  
+  .sliderInnerSection {
+    padding: 0 70px;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    color: White;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  .sliderButton {
+    border: none;
+    background: #d4af37;
+    border-radius: 30px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    padding: 5px 25px;
+    font-weight: 400;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  
+  .sliderButton:hover {
+    color: #ffffff;
+    background: #262626;
+  }
+  
+  /* .slider {
+    position: relative ;
+    width: 100% ;
+    overflow: hidden;
+  } */
+  
+  .previousButton:hover,
+  .nextButton:hover {
+    background-color: #d4af35;
+    border-radius: 30px;
+    opacity: 0.7;
+  }
+  
+  .sliderH1 {
+    margin: 0 auto;
+    max-width: 840px;
+    font-size: 50px;
+    transition: all 0.3s ease;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  
+  .slide.animateIn.previous h1,
+  .slide.current h1,
+  .slide.animateIn.next h1,
+  .slide.animateIn.previous button,
+  .slide.current button,
+  .slide.animateIn.next button,
+  .slide.animateIn.previous p,
+  .slide.current p,
+  .slide.animateIn.next p,
+  .slide.animateIn.previous section *,
+  .slide.current section *,
+  .slide.animateIn.next section * {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition-delay: 0.9s;
+    transition-delay: 0.9s;
+    opacity: 1;
+  }
+  
+  .sliderP {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 20px auto 30px;
+    max-width: 640px;
+    transition: all 0.3s ease;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  
+  .sliderSection {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  .sliderSpan {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    display: inline-block;
+    text-align: left;
+    line-height: 1.4;
+    vertical-align: middle;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  
+  .sliderImg {
+    width: 60px;
+    height: 60px;
+    border: solid 2px rgb(212, 175, 55);
+    border-radius: 100%;
+    vertical-align: middle;
+  }
+  
+  .slide::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(transparent),
+      to(rgba(0, 0, 0, 0.9))
+    );
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+    bottom: 0;
+    left: 0;
+  }
+
+  /* ========================================================================
+New options in Dev WIP
+ ========================================================================== */
+ .slider-fade .owl-stage-outer {
+    height: 100%;
+  }
+
+  .slider-fade3 .owl-carousel .caption .overflow-hidden {
+    display: inline-block;
+    margin-top: 25rem;
+  }

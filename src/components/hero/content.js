@@ -1,7 +1,7 @@
 import Audi from "../../img/banner/audiBannerCustom.jpg";
 import Customer from "../../img/banner/customerBanner.jpg";
 import Interior from "../../img/banner/interiorBanner.jpg";
-import USA from "../../img/banner/USA.jpg";
+// import USA from "../../img/banner/USA.jpg";
 
 const content = 
 [
@@ -33,15 +33,15 @@ const content =
         linkToProfile: "https://www.pexels.com/@pixabay?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels",
         source:"/gallery"
     },
-    {
-        imageBg: USA,
-        title: "Ask about our contribution towards the Wounded Warrior Project",
-        description:"One wash closer to a better life.",
-        fontPosition: "item bg-img text-center cover-background",
-        photographer: "RODNAE Productions",
-        linkToProfile: "https://www.pexels.com/@rodnae-prod?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels",
-        source:"/gallery"
-    }
+    // {
+    //     imageBg: USA,
+    //     title: "Ask about our contribution towards the Wounded Warrior Project",
+    //     description:"One wash closer to a better life.",
+    //     fontPosition: "item bg-img text-center cover-background",
+    //     photographer: "RODNAE Productions",
+    //     linkToProfile: "https://www.pexels.com/@rodnae-prod?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels",
+    //     source:"/gallery"
+    // }
 ]
 
 export default content;
