@@ -17,7 +17,7 @@ const info = () => {
                 </span>
                 <h3 className=" mb-4 text-grey">About Us</h3>
                 <p className="text-grey display-30 infoText" >
-                  J's Auto Detailing was founded by Carlos Jara. It is the most
+                  J's Auto Detailing was founded in order to provide afforadle detailing to those in  Southern California. It is the most
                   trusted auto detailing business in the area.
                 </p>
               </div>

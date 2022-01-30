@@ -1,11 +1,13 @@
 /* ========================================================================
 Slider
  ========================================================================== */
-  
-  .sliderContent {
-    text-align: center;
-  }
-  
+ .slider {
+  position: relative;
+  width: 100%;
+  height: 600px !important;
+  overflow: hidden;
+}
+
   .sliderInnerSection {
     padding: 0 70px;
     box-sizing: border-box;
@@ -16,34 +18,20 @@ Slider
     color: White;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    /* display: flex; */
+    /* justify-content: center;
+    align-content: center; */
+  }
+
+  .buttonWrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .sliderButton {
-    border: none;
-    background: #d4af37;
-    border-radius: 30px;
-    text-transform: uppercase;
-    box-sizing: border-box;
-    padding: 5px 25px;
-    font-weight: 400;
-    font-size: 13px;
     cursor: pointer;
-    transition: all 0.3s ease;
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-    opacity: 0;
   }
-  
-  .sliderButton:hover {
-    color: #ffffff;
-    background: #262626;
-  }
-  
-  /* .slider {
-    position: relative ;
-    width: 100% ;
-    overflow: hidden;
-  } */
   
   .previousButton:hover,
   .nextButton:hover {
@@ -62,15 +50,18 @@ Slider
     opacity: 0;
   }
   
+  .slide.animateIn.previous Link,
+  .slide.current Link,
+  .slide.animateIn.next Link,
   .slide.animateIn.previous h1,
   .slide.current h1,
   .slide.animateIn.next h1,
   .slide.animateIn.previous button,
   .slide.current button,
   .slide.animateIn.next button,
-  .slide.animateIn.previous p,
-  .slide.current p,
-  .slide.animateIn.next p,
+  .slide.animateIn.previous h3,
+  .slide.current h3,
+  .slide.animateIn.next h3,
   .slide.animateIn.previous section *,
   .slide.current section *,
   .slide.animateIn.next section * {
@@ -81,8 +72,8 @@ Slider
     opacity: 1;
   }
   
-  .sliderP {
-    font-size: 14px;
+  .sliderH3 {
+    font-weight: 700;
     line-height: 1.5;
     margin: 20px auto 30px;
     max-width: 640px;
@@ -94,6 +85,17 @@ Slider
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+    text-transform: uppercase;
+  }
+
+  .sliderH3:before {
+    content: "";
+    width: 100px;
+    height: 5px;
+    background: #9a8c67;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
   }
   
   .sliderSection {
@@ -116,14 +118,6 @@ Slider
     opacity: 0;
   }
   
-  .sliderImg {
-    width: 60px;
-    height: 60px;
-    border: solid 2px rgb(212, 175, 55);
-    border-radius: 100%;
-    vertical-align: middle;
-  }
-  
   .slide::before {
     content: "";
     display: block;
@@ -142,14 +136,94 @@ Slider
     left: 0;
   }
 
+  .photoDetails{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #9a8c67;
+  }
+
+  #photoLink {
+    color: #9a8c67;
+  }
+  #photoLink:hover {
+    color: #fff;
+  }
+
   /* ========================================================================
 New options in Dev WIP
  ========================================================================== */
- .slider-fade .owl-stage-outer {
+ .slider-fade3 .owl-stage-outer {
     height: 100%;
   }
 
   .slider-fade3 .owl-carousel .caption .overflow-hidden {
     display: inline-block;
     margin-top: 25rem;
+  }
+
+  .slider-fade3 .owl-item {
+    height: 100vh;
+    position: relative;
+  }
+
+  .slider-fade3 .item {
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+
+  .slider-fade3 .item .caption {
+    width: 100%;
+    z-index: 9;
+  }
+
+  @media screen and (max-width: 767px) {
+    .slider-fade3 .owl-carousel .caption .overflow-hidden {
+      margin-top: 20rem;
+    }
+    .slider-fade3 .owl-carousel .caption h1 {
+      font-size: 2.6rem;
+    }
+    .slider-fade3 .owl-carousel .caption h3 {
+      font-size: 1rem;
+    }
+    .sliderH1 {
+      font-size: 25px;
+    }
+
+    .sliderH3 {
+      font-size: 8px;
+      -webkit-box-orient: vertical;
+      text-transform: uppercase;
+    }
+
+    .sliderH3:before {
+      content: "";
+      width: 10px;
+      height: 5px;
+    }
+
+    .sliderSpan {
+      font-size: 8px;
+      margin-left: 10px;
+    }
+
+    .sliderButton {
+     font-size: 7px;
+     padding: 3px 6px;
+    }
+    .slider {
+      /* position: relative; */
+      /* width: 100%; */
+      height: 300px !important;
+      /* overflow: hidden; */
+    }
+    
   }
