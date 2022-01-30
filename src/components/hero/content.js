@@ -12,7 +12,7 @@ const content =
         // fontPosition: "item bg-img h-100 cover-background",
         photographer: "Alex Amorales",
         linkToProfile: "https://www.pexels.com/@alex-amorales-321095?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels",
-        source:"/service"
+        source:"/services"
 
     },
     {
@@ -22,7 +22,7 @@ const content =
         // fontPosition: "item bg-img h-100 cover-background",
         photographer: "Tima M.",
         linkToProfile: "https://www.pexels.com/@tima-miroshnichenko",
-        source:"/contact"
+        // source:"Not Applicable"
     },
     {
         imageBg: Pro,

@@ -18,7 +18,7 @@ class ContactForm2 extends React.Component {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encodeURI({ "form-name": "contactv2", ...this.state }),
+      body: encodeURI({ "form-name": "contact", ...this.state }),
     })
       .then(() => alert("Success!"))
       .catch((error) => alert(error));
@@ -46,14 +46,14 @@ class ContactForm2 extends React.Component {
                   <h2 className="text-center">Get A Free Quote!</h2>
                   <form
                     method="POST"
-                    name="contactv2"
+                    name="contact"
                     className="quform"
-                    action="/"
-                    encType="multipart/form-data"
-                    data-netlify="true"
-                    onSubmit="submit"
+                    action="/contact"
+                    // encType="multipart/form-data"
+                    // data-netlify="true"
+                    // onSubmit="submit"
                   >
-                    <input type="hidden" name="form-name" value="contactv2"/>
+                    <input type="hidden" name="form-name" value="contact"/>
                     <div className="quform-elements">
                       <div className="row">
                         {/* Input start */}

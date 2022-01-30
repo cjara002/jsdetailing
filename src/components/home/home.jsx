@@ -2,8 +2,8 @@ import React from "react";
 import InfoSection from "../infoSection/info";
 import Services from "../services/services";
 import Gallery2 from "../gallery/gallery2";
-// import ContactForm2 from "../contact/contactForm2";
-import ContactForm from "../contact/contactForm";
+import ContactForm2 from "../contact/contactForm2";
+// import ContactForm from "../contact/contactForm";
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
       <Services />
       <Gallery2 />
       {/* <ContactForm2 /> */}
-      <ContactForm />
+      <ContactForm2 />
     </React.Fragment>
   );
 };

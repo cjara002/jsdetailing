@@ -3,13 +3,13 @@ import Slider from "react-animated-slider";
 import "./SlideStyle.css";
 import "react-animated-slider/build/horizontal.css";
 import Content from "./content";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const heroBannerSlides = () => {
   return (
     <React.Fragment>
       {/* DashBoard Slider */}
-      <div className="screen-height"  >
+      <div className="screen-height">
         <div className="slider-fade3 h-100">
           <div className="owl-carousel owl-theme w-100 h-100">
             <Slider autoplay={3000}>
@@ -19,7 +19,7 @@ const heroBannerSlides = () => {
                   className="sliderContent h-100 cover-background"
                   data-overlay-dark="6"
                   style={{
-                    background: `url('${content.imageBg}') center`, 
+                    background: `url('${content.imageBg}') center`,
                   }}
                 >
                   <div className="container h-100">
@@ -32,7 +32,15 @@ const heroBannerSlides = () => {
                           <h1 className="sliderH1 mb-4 w-85">
                             {content.title}
                           </h1>
-                          <div className="buttonWrap"><Link to={content.source} className="butn gold sliderButton">Learn More</Link></div>
+                          <div className="buttonWrap">
+                            <Link
+                              to={content.source}
+                              className="butn gold sliderButton"
+                            >
+                              Learn More
+                            </Link>
+                          </div>
+
                         </div>
                         {/* <section className="sliderSection"> */}
                         <section className="photoDetails d-none d-sm-block">
@@ -40,7 +48,14 @@ const heroBannerSlides = () => {
                           <span className="sliderSpan">
                             Photo by <br />
                             <strong>
-                            <a id="photoLink" href={content.linkToProfile} target="blank">  {content.photographer} </a>
+                              <a
+                                id="photoLink"
+                                href={content.linkToProfile}
+                                target="blank"
+                              >
+                                {" "}
+                                {content.photographer}{" "}
+                              </a>
 
                               {/* {content.photographer} */}
                             </strong>{" "}
