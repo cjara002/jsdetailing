@@ -48,7 +48,7 @@ class ContactForm2 extends React.Component {
                     method="POST"
                     name="contact"
                     className="quform"
-                    action="/contact"
+                    action="/"
                     // encType="multipart/form-data"
                     // data-netlify="true"
                     // onSubmit="submit"
