@@ -13,12 +13,11 @@ class ContactForm2 extends React.Component {
     message: " ",
   };
 
-  onSubmit = (event) => {
-    console.log("on Submit:", ...this.state);
+  handleSubmit = (event) => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encodeURI({ "form-name": "contact", ...this.state }),
+      body: encodeURI({ "form-name": "contact", ...this.state })
     })
       .then(() => alert("Success!"))
       .catch((error) => alert(error));
@@ -45,13 +44,13 @@ class ContactForm2 extends React.Component {
                   <image src={Logo} alt="image" className="mb-4" />
                   <h2 className="text-center">Get A Free Quote!</h2>
                   <form
-                    method="POST"
-                    name="contact"
+                    //method="POST"
+                    //name="contact"
                     className="quform"
-                    action="/"
+                    //action="/"
                     // encType="multipart/form-data"
                     // data-netlify="true"
-                    // onSubmit="submit"
+                    onSubmit={this.handleSubmit}
                   >
                     <input type="hidden" name="form-name" value="contact"/>
                     <div className="quform-elements">

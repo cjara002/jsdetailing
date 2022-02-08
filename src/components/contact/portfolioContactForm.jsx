@@ -41,74 +41,14 @@ class ContactForm extends React.Component {
         >
           <h1 className="formHeader"> Contact Me</h1>
 
-          {/* <Fade bottom> */}
             <div className="row block-center mt-4 " id="formBorder">
-              {/* <div className="col">
-                  <div className="container" id="formContainer">
-                    <form
-                      method="POST"
-                      name="contact"
-                      action="/contact"
-                      id="formContact"
-                    >
-                      <input type="hidden" name="form-name" value="contact" />
-                      <div>
-                        <label className="formName">
-                          Name:{" "}
-                          <input
-                            required
-                            type="text"
-                            name="name"
-                          />
-                        </label>
-                      </div>
-    
-                      <div>
-                        <label className="formEmail">
-                          Email:{" "}
-                          <input
-                            required
-                            type="email"
-                            name="email"
-                          />
-                        </label>
-                      </div>
-                      <div>
-                        <label className="formNumber">
-                          Phone Number:{" "}
-                          <input
-                            type="text"
-                            name="number"
-                          />
-                        </label>
-                      </div>
-                      <div>
-                        <label className="formMessage">
-                          Message:{" "}
-                          <textarea
-                            required
-                            name="message"
-                            defaultValue={""}
-                          />
-                        </label>
-                      </div>
-    
-                      <div>
-                        <div data-netlify-recaptcha="true"></div>
-                      </div>
-                      <div>
-                        <Button color="secondary" type="submit">Send</Button>
-                      </div>
-                    </form>
-                  </div>
-                </div> */}
               <div className="col-6">
                 <div className="card-default card " id="formContainer">
                   <div className="card-body">
                     <form
                       method="POST"
                       name="contact"
-                      action="/contact"
+                    //   action="/"
                       id="formContact"
                     >
                       <div className="row gtr-50">
