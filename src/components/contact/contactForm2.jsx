@@ -13,11 +13,17 @@ class ContactForm2 extends React.Component {
     message: " ",
   };
 
+  encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
+
   handleSubmit = (event) => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encodeURI({ "form-name": "contact", ...this.state })
+      body: this.encode({ "form-name": "contact", ...this.state })
     })
       .then(() => alert("Success!"))
       .catch((error) => alert(error));
