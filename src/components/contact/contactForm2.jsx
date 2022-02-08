@@ -52,7 +52,7 @@ class ContactForm2 extends React.Component {
                     // data-netlify="true"
                     onSubmit={this.handleSubmit}
                   >
-                    {/* <input type="hidden" name="form-name" value="contact"/> */}
+                    <input type="hidden" name="form-name" value="contact"/>
                     <div className="quform-elements">
                       <div className="row">
                         {/* Input start */}
