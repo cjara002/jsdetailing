@@ -52,7 +52,7 @@ class ContactForm2 extends React.Component {
                     // data-netlify="true"
                     onSubmit={this.handleSubmit}
                   >
-                    <input type="hidden" name="form-name" value="contact"/>
+                    {/* <input type="hidden" name="form-name" value="contact"/> */}
                     <div className="quform-elements">
                       <div className="row">
                         {/* Input start */}
@@ -71,7 +71,8 @@ class ContactForm2 extends React.Component {
                                 id="name"
                                 type="text"
                                 name="name"
-                                // value={fullName}
+                                value={this.state.name}
+                                onChange={this.handleChange}
                               />
                             </div>
                           </div>
@@ -92,6 +93,8 @@ class ContactForm2 extends React.Component {
                                 id="email"
                                 type="email"
                                 name="email"
+                                value={this.state.email}
+                                onChange={this.handleChange}
                                 // value={email}
                               />
                             </div>
@@ -112,6 +115,8 @@ class ContactForm2 extends React.Component {
                                 id="subject"
                                 type="text"
                                 name="subject"
+                                value={this.state.subject}
+                                onChange={this.handleChange}
                                 // value={subject}
                               />
                             </div>
@@ -132,6 +137,8 @@ class ContactForm2 extends React.Component {
                                 id="phone"
                                 type="text"
                                 name="phone"
+                                value={this.state.phone}
+                                onChange={this.handleChange}
                                 // value={phone}
                               />
                             </div>
@@ -153,6 +160,8 @@ class ContactForm2 extends React.Component {
                                 name="message"
                                 rows="3"
                                 placeholder="What kind of car do you have? What kind of cleaning do you need today?"
+                                value={this.state.message}
+                                onChange={this.handleChange}
                                 // value={message}
                               />
                             </div>
