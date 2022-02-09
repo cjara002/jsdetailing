@@ -2,13 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import "./App.css";
 import NavBar from "./components/navBar/navBar.jsx";
-// import HeroBanner2 from "./components/hero/heroCarosel";
-// import HeroBannerStatic from "./components/hero/heroBannerStatic";
-// import InfoSection from "./components/infoSection/info";
-// import Services from "./components/services/services.jsx";
 import Gallery2 from "./components/gallery/gallery2.jsx";
-// import ContactForm from "./components/contact/contactForm.jsx";
-// import ContactForm2 from "./components/contact/contactForm2.jsx";
 import Footer from "./components/footer/footer.jsx";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./components/home/home";
@@ -23,7 +17,6 @@ class App extends React.Component {
         <Router>
           <div className="main-wrapper">
             <NavBar />
-            {/* <HeroBanner2 /> */}
             <HeroBannerSlides />
             <Switch>
               <Route exact path="/">
@@ -34,7 +27,6 @@ class App extends React.Component {
               </Route>
               <Route exact path="/gallery">
                 <Gallery2 />
-                {/* <iframe title = "Ig Feed for ..."src={IgFeed}></iframe> */}
               </Route>
               {/* <Route exact path="/contact">
                 <ContactForm2 />

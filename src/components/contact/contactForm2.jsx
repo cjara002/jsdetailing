@@ -3,6 +3,7 @@ import "./form.css";
 import Logo from "../../img/logo/jsLogoTrans.png";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import lights from "../../img/contactForm/contactLights.jpg";
+import Swal from "sweetalert2";
 
 class ContactForm2 extends React.Component {
   state = {
@@ -25,13 +26,33 @@ class ContactForm2 extends React.Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: this.encode({ "form-name": "contact", ...this.state })
     })
-      .then(() => alert("Success!"))
-      .catch((error) => alert(error));
+      .then(this.onSuccessSubmission)
+      .catch(this.onErrorSubmission);
     event.preventDefault();
   };
 
   handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
+  };
+
+  onSuccessSubmission = () => {
+    Swal.fire({
+      icon: "success",
+      title: "Thank you for your message!",
+      text: "We will reach out to you soon. Feel free to look at our work on our Instagram page!",
+      showConfirmButton: false,
+      timer: 3000,
+    });
+  };
+
+  onErrorSubmission = () => {
+    Swal.fire({
+      icon: "error",
+      title: "Oh no! It is broken!",
+      text: "Not sure what went wrong. Please try the number on the website to schedule your appoimnent",
+      showConfirmButton: false,
+      timer: 3000,
+    });
   };
 
   render() {
