@@ -135,6 +135,7 @@ class ContactForm2 extends React.Component {
                                 class="form-control form-select"
                                 id="vehicleType"
                                 name="vehicleType"
+                                onChange={this.handleChange}
                               >
                                 <option value="">
                                   -- Select Vehicle Type --
@@ -161,14 +162,15 @@ class ContactForm2 extends React.Component {
                                 class="form-control form-select"
                                 id="service"
                                 name="service"
+                                onChange={this.handleChange}
                               >
                                 <option value="">
                                   -- Select Service --
                                 </option>
-                                <option value="Cardiology">Mini Express</option>
-                                <option value="Gynecology">Exterior Package</option>
-                                <option value="Neurology">Wash & Vacuum</option>
-                                <option value="Others">Shampoo Package</option>
+                                <option value="miniExpress">Mini Express</option>
+                                <option value="exteriorPackage">Exterior Package</option>
+                                <option value="wasNVac">Wash & Vacuum</option>
+                                <option value="shampoo">Shampoo Package</option>
                               </select>
                             </div>
                           </div>
@@ -188,6 +190,7 @@ class ContactForm2 extends React.Component {
                                 class="form-control form-select"
                                 id="hearFromUs"
                                 name="hearFromUs"
+                                onChange={this.handleChange}
                               >
                                 <option value="">
                                   -- Select One --
