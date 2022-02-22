@@ -9,22 +9,27 @@ class ContactForm2 extends React.Component {
   state = {
     name: " ",
     email: " ",
-    subject: "",
+    vehicleType: "",
+    service: "",
+    hearFromUs: "",
     phone: " ",
-    message: " ",
+    address: " ",
+    addInfo: " ",
   };
 
   encode = (data) => {
     return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
-  }
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
 
   handleSubmit = (event) => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: this.encode({ "form-name": "contact", ...this.state })
+      body: this.encode({ "form-name": "contact", ...this.state }),
     })
       .then(this.onSuccessSubmission)
       .catch(this.onErrorSubmission);
@@ -70,16 +75,8 @@ class ContactForm2 extends React.Component {
                   {/* Image does not show */}
                   <image src={Logo} alt="image" className="mb-4" />
                   <h2 className="text-center">Get A Free Quote!</h2>
-                  <form
-                    //method="POST"
-                    //name="contact"
-                    className="quform"
-                    //action="/"
-                    // encType="multipart/form-data"
-                    // data-netlify="true"
-                    onSubmit={this.handleSubmit}
-                  >
-                    <input type="hidden" name="form-name" value="contact"/>
+                  <form className="quform" onSubmit={this.handleSubmit}>
+                    <input type="hidden" name="form-name" value="contact" />
                     <div className="quform-elements">
                       <div className="row">
                         {/* Input start */}
@@ -91,8 +88,6 @@ class ContactForm2 extends React.Component {
                               <span className="quform-required">* </span>
                             </label>
                             <div className="quform-input">
-                              {/* <input value={email} onChange={(event) => setEmail(event.target.value)}> */}
-
                               <input
                                 className="form-control"
                                 id="name"
@@ -122,30 +117,87 @@ class ContactForm2 extends React.Component {
                                 name="email"
                                 value={this.state.email}
                                 onChange={this.handleChange}
-                                // value={email}
                               />
                             </div>
                           </div>
                         </div>
                         {/* Input End */}
                         {/* Input start */}
-                        <div className="col-md-6">
+                        <div className="col-md-4">
                           <div className="quform-element form-group">
-                            <label for="subject" className="text-white">
+                            <label for="vehicleType" className="text-white">
                               {" "}
-                              Subject Line
+                              Vehicle Type
                               <span className="quform-required">* </span>
                             </label>
                             <div className="quform-input">
-                              <input
-                                className="form-control"
-                                id="subject"
-                                type="text"
-                                name="subject"
-                                value={this.state.subject}
-                                onChange={this.handleChange}
-                                // value={subject}
-                              />
+                              <select
+                                class="form-control form-select"
+                                id="vehicleType"
+                                name="vehicleType"
+                              >
+                                <option value="">
+                                  -- Select Vehicle Type --
+                                </option>
+                                <option value="car">Car/Coupe</option>
+                                <option value="suv">SUV</option>
+                                <option value="truck">Truck</option>
+                                <option value="Other">Other</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        {/* Input End */}
+                        {/* Input start */}
+                        <div className="col-md-4">
+                          <div className="quform-element form-group">
+                            <label for="service" className="text-white">
+                              {" "}
+                              Type of Service
+                              <span className="quform-required">* </span>
+                            </label>
+                            <div className="quform-input">
+                              <select
+                                class="form-control form-select"
+                                id="service"
+                                name="service"
+                              >
+                                <option value="">
+                                  -- Select Service --
+                                </option>
+                                <option value="Cardiology">Mini Express</option>
+                                <option value="Gynecology">Exterior Package</option>
+                                <option value="Neurology">Wash & Vacuum</option>
+                                <option value="Others">Shampoo Package</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        {/* Input End */}
+                        
+                        {/* Input start */}
+                        <div className="col-md-4">
+                          <div className="quform-element form-group">
+                            <label for="hearFromUs" className="text-white">
+                              {" "}
+                              How did you hear from us?
+                              <span className="quform-required">* </span>
+                            </label>
+                            <div className="quform-input">
+                              <select
+                                class="form-control form-select"
+                                id="hearFromUs"
+                                name="hearFromUs"
+                              >
+                                <option value="">
+                                  -- Select One --
+                                </option>
+                                <option value="fb">Facebook</option>
+                                <option value="ig">Instagram</option>
+                                <option value="yelp">Yelp</option>
+                                <option value="google">Google</option>
+                                <option value="none">None of the above</option>
+                              </select>
                             </div>
                           </div>
                         </div>
@@ -166,7 +218,27 @@ class ContactForm2 extends React.Component {
                                 name="phone"
                                 value={this.state.phone}
                                 onChange={this.handleChange}
-                                // value={phone}
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        {/* Input End */}
+                        {/* Input start */}
+                        <div className="col-md-6">
+                          <div className="quform-element form-group">
+                            <label for="address" className="text-white">
+                              {" "}
+                              Address
+                              <span className="quform-required">* </span>
+                            </label>
+                            <div className="quform-input">
+                              <input
+                                className="form-control"
+                                id="address"
+                                type="text"
+                                name="address"
+                                value={this.state.address}
+                                onChange={this.handleChange}
                               />
                             </div>
                           </div>
@@ -175,21 +247,20 @@ class ContactForm2 extends React.Component {
                         {/* Input start */}
                         <div className="col-md-12">
                           <div className="quform-element form-group">
-                            <label for="message" className="text-white">
+                            <label for="addInfo" className="text-white">
                               {" "}
-                              Message
+                              Additional Info
                               <span className="quform-required">* </span>
                             </label>
                             <div className="quform-input">
                               <textarea
                                 className="form-control"
-                                id="message"
-                                name="message"
+                                id="addInfo"
+                                name="addInfo"
                                 rows="3"
-                                placeholder="What kind of car do you have? What kind of cleaning do you need today?"
-                                value={this.state.message}
+                                placeholder="Any other information you want us to know?"
+                                value={this.state.AddInfo}
                                 onChange={this.handleChange}
-                                // value={message}
                               />
                             </div>
                           </div>

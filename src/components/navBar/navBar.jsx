@@ -47,26 +47,6 @@ const NavBar = (props) => {
                       <li>
                         <Link to="/gallery">Gallery</Link>
                       </li>
-                      {/* <li>
-                        <Link to="/contact">Contact Us</Link>
-                      </li> */}
-
-                      {/* <li className="ml-2">
-                        <a
-                          href="#!"
-                          className="butn appointment"
-                          data-toggle="tooltip"
-                          title="Book Now"
-                        >
-                          <i className="fas fa-calendar-day mr-1 align-middle display-28"></i>
-                          <span
-                            className="alt-font align-middle d-none d-xxl-inline-block"
-                            onClick={toggle}
-                          >
-                            Book Now
-                          </span>
-                        </a>
-                      </li> */}
                     </ul>
                     <div className="attr-nav">
                       <ul>

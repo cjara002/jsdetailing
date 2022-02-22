@@ -3,6 +3,9 @@
     color: white;
     padding: 10px;
 }
+.form-control {
+  height:100% !important;
+}
 /* quform */
 .form-group {
     margin-bottom: 1rem;
