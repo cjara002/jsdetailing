@@ -3,11 +3,13 @@ import Time from "../../img/info/time2.png";
 import Person from "../../img/info/person.png";
 import Wash from "../../img/info/washing.png";
 import "./info.css";
+import Fade from 'react-reveal/Fade';
 
 const info = () => {
   return (
     <React.Fragment>
       <section className="pb-0 p-lg-0 feature-box-03 bg-lightGold">
+      <Fade bottom>
         <div className="container position-relative z-index-9">
           <div className="row g-0">
             <div className="col-lg-4 bg-lightGold">
@@ -55,6 +57,7 @@ const info = () => {
             </div>
           </div>
         </div>
+      </Fade>
       </section>
     </React.Fragment>
   );

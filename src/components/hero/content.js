@@ -12,7 +12,8 @@ const content =
         // fontPosition: "item bg-img h-100 cover-background",
         photographer: "Alex Amorales",
         linkToProfile: "https://www.pexels.com/@alex-amorales-321095?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels",
-        source:"/services"
+        source:"/services",
+        buttonDescription: "See Services"
 
     },
     {
@@ -22,7 +23,8 @@ const content =
         // fontPosition: "item bg-img h-100 cover-background",
         photographer: "Tima M.",
         linkToProfile: "https://www.pexels.com/@tima-miroshnichenko",
-        // source:"Not Applicable"
+        // source:"/services",
+        // buttonDescription: "See Services"
     },
     {
         imageBg: Pro,
@@ -31,7 +33,8 @@ const content =
         // fontPosition: "item bg-img h-100 cover-background",
         photographer: "Sourav Mishra",
         linkToProfile: "https://www.pexels.com/photo/black-sedan-2710043/",
-        source:"/gallery"
+        source:"/gallery",
+        buttonDescription: "See Gallery"
     },
     // {
     //     imageBg: USA,

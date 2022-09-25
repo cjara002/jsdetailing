@@ -33,12 +33,19 @@ const heroBannerSlides = () => {
                             {content.title}
                           </h1>
                           <div className="buttonWrap">
-                            <Link
+                            {/* <Link
+                              to={content.source}
+                              className="butn gold sliderButton"
+                            > */}
+                              {content.buttonDescription ?    
+                              <Link
                               to={content.source}
                               className="butn gold sliderButton"
                             >
-                              Learn More
-                            </Link>
+                              {content.buttonDescription}
+                               </Link>
+                              : ""}
+                            {/* </Link> */}
                           </div>
 
                         </div>

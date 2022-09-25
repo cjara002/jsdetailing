@@ -4,6 +4,7 @@ import Logo from "../../img/logo/jsLogoTrans.png";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import lights from "../../img/contactForm/contactLights.jpg";
 import Swal from "sweetalert2";
+import Fade from 'react-reveal/Fade';
 
 class ContactForm2 extends React.Component {
   state = {
@@ -78,6 +79,7 @@ class ContactForm2 extends React.Component {
                   <form className="quform" onSubmit={this.handleSubmit}>
                     <input type="hidden" name="form-name" value="contact" />
                     <div className="quform-elements">
+                    <Fade bottom>
                       <div className="row">
                         {/* Input start */}
                         <div className="col-md-6">
@@ -282,6 +284,7 @@ class ContactForm2 extends React.Component {
                         </div>
                         {/* Submit end */}
                       </div>
+                      </Fade>
                     </div>
                   </form>
                 </div>
