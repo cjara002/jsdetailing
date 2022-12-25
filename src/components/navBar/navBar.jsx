@@ -10,6 +10,7 @@ const NavBar = (props) => {
   const [modal, setModal] = useState(false);
 
   const toggle = () => setModal(!modal);
+  
   return (
     <React.Fragment>
       <header className="header-style3 header-custom">
@@ -48,9 +49,9 @@ const NavBar = (props) => {
                         <Link to="/gallery">Gallery</Link>
                       </li>
                     </ul>
-                    <div className="attr-nav">
+                    {/* <div className="attr-nav">
                       <ul>
-                        {/* <li class="ml-2" onClick={toggle}>
+                        <li class="ml-2" onClick={toggle}>
                           <a
                             href="#!"
                             class="butn appointment"
@@ -62,14 +63,13 @@ const NavBar = (props) => {
                               Book Now
                             </span>
                           </a>
-                        </li> */}
+                        </li>
                       </ul>
-                    </div>
+                    </div> */}
                   </nav>
                 </div>
               </div>
             </div>
-
             <BookingModal toggle={toggle} modal={modal}/>
           </div>
         </div>

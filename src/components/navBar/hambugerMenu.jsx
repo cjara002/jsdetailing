@@ -4,12 +4,10 @@ import {
   MDBNavbarBrand,
   MDBNavbarNav,
   MDBNavItem,
-  //   MDBNavLink,
   MDBCollapse,
   MDBContainer,
   MDBHamburgerToggler,
 } from "mdbreact";
-// import { BrowserRouter as Router } from "react-router-dom";
 import JlogTrans from "../../img/logo/jsLogoTrans.png";
 import "./navBar.css";
 import {Link} from "react-router-dom"; 
@@ -35,7 +33,6 @@ class hambugerMenu extends Component {
 
   render() {
     return (
-      //   <Router>
       <MDBContainer className="hamburgerMenu">
         <MDBNavbar color="white" style={{ marginTop: "20px" }} light>
           <MDBContainer>
@@ -53,9 +50,9 @@ class hambugerMenu extends Component {
               onClick={() => this.toggleSingleCollapse("collapse1")}
             />
             <MDBCollapse isOpen={this.state.collapse1} navbar>
-              <MDBNavbarNav left>
-                <MDBNavItem>
-               <Link to="/">Home</Link> 
+              <MDBNavbarNav className="hambugerMenuDropDownGlassEffect" left>
+                <MDBNavItem >
+               <Link to="/" >Home</Link> 
                 </MDBNavItem>
                 <MDBNavItem>
                <Link to="/services">Services</Link> 
@@ -63,15 +60,12 @@ class hambugerMenu extends Component {
                 <MDBNavItem>
                 <Link to="/gallery">Gallery </Link>
                 </MDBNavItem>
-                {/* <MDBNavItem>
-                <Link to="/contact">Contact Us </Link>
-                </MDBNavItem> */}
               </MDBNavbarNav>
             </MDBCollapse>
           </MDBContainer>
         </MDBNavbar>
       </MDBContainer>
-      //   </Router>
+
     );
   }
 }

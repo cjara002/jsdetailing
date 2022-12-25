@@ -63,7 +63,6 @@ const topBar = () => {
           </div>
         </div>
       </div>
-      ;
     </React.Fragment>
   );
 };

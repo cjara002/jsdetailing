@@ -28,9 +28,6 @@ class App extends React.Component {
               <Route exact path="/gallery">
                 <Gallery2 />
               </Route>
-              {/* <Route exact path="/contact">
-                <ContactForm2 />
-              </Route> */}
             </Switch>
             <Footer />
           </div>
