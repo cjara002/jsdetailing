@@ -17,10 +17,24 @@ const info = () => {
                 <span className="mb-4 d-inline-block">
                   <img src={Person} alt="..." />
                 </span>
-                <h3 className=" mb-4 text-grey">About Us</h3>
+                <h3 className="mb-4 text-grey">Services</h3>
                 <p className="text-grey display-30 infoText" >
-                  J's Auto Detailing was founded in order to provide afforadle detailing to those in  Southern California. It is the most
-                  trusted auto detailing business in the area.
+                  <ul className='list-unstyled'>
+                    <li>
+                      <span>Express Wash</span>
+                      <span className="float-right">Ceramic Coatings</span>
+                    </li>
+
+                    <li>
+                      <span>Decontamination</span>
+                      <span className="float-right">Wax & Polish</span>
+                    </li>
+
+                    <li>
+                      <span>Shampoo Interior</span>
+                      <span className="float-right">Remove Pet Hair</span>
+                    </li>
+                  </ul>
                 </p>
               </div>
             </div>

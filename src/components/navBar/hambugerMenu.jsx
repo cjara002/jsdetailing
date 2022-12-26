@@ -51,11 +51,8 @@ class hambugerMenu extends Component {
             />
             <MDBCollapse isOpen={this.state.collapse1} navbar>
               <MDBNavbarNav className="hambugerMenuDropDownGlassEffect" left>
-                <MDBNavItem >
-               <Link to="/" >Home</Link> 
-                </MDBNavItem>
                 <MDBNavItem>
-               <Link to="/services">Services</Link> 
+               <Link to="/services">Detailing Services</Link> 
                 </MDBNavItem>
                 <MDBNavItem>
                 <Link to="/gallery">Gallery </Link>

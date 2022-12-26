@@ -7,7 +7,7 @@ import ContactForm2 from "../contact/contactForm2";
 const Home = () => {
   return (
     <React.Fragment>
-      <InfoSection />
+      <InfoSection/>
       <Services />
       <Gallery2 />
       <ContactForm2 />

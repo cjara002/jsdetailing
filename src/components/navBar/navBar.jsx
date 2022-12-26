@@ -40,10 +40,7 @@ const NavBar = (props) => {
                     </div>
                     <ul className="navbar-nav ml-auto" id="nav">
                       <li>
-                        <Link to="/">Home</Link>
-                      </li>
-                      <li>
-                        <Link to="/services">Services</Link>
+                        <Link to="/services">Detailing Services</Link>
                       </li>
                       <li>
                         <Link to="/gallery">Gallery</Link>
